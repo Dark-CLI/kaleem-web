@@ -1,25 +1,40 @@
 ---
 layout: ../layouts/MarkdownPage.astro
-title: "Home"
-description: "Welcome to my website!"
+title: "Kaleem - Smart Home Solutions"
+description: "Making every house smart."
 ---
 
-# 🧑‍🚀 Hello, Astronaut!
+# Your home should be more than walls and wires.
 
-[Go to Test Page](/test)
+Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
 
-Welcome to the official [Astro](https://astro.build/) blog starter template. This template serves as a lightweight, minimally-styled starting point for anyone looking to build a personal website, blog, or portfolio with Astro.
+At Kaleem, we believe your home should feel like a close friend that understands, cares, and interacts with you.
 
-This template comes with a few integrations already configured in your `astro.config.mjs` file. You can customize your setup with [Astro Integrations](https://astro.build/integrations) to add tools like Tailwind, React, or Vue to your project.
+[Learn More About Our Solutions](/solutions)
 
-Here are a few ideas on how to get started with the template:
+## Our Focus
 
-*   Edit this page in `src/pages/index.md`
-*   Edit the site header items in `src/components/Header.astro`
-*   Add your name to the footer in `src/components/Footer.astro`
-*   Check out the included blog posts in `src/content/blog/`
-*   Customize the blog post page layout in `src/layouts/BlogPost.astro`
+Kaleem strategically targets key sectors to bring smart living to a wider audience:
 
-Have fun! If you get stuck, remember to [read the docs](https://docs.astro.build/) or [join us on Discord](https://astro.build/chat) to ask questions.
+*   **Residential Complexes:** Deploying large-scale smart home infrastructure across entire housing projects, creating integrated smart communities.
+*   **Businesses:** Providing smart automation, enhanced security, and optimized energy efficiency solutions for diverse commercial environments, including offices, retail spaces, and hospitality venues.
+*   **Private Homes:** Delivering tailored smart home solutions for individual homeowners seeking a smarter, safer, and more user-friendly living space customized to their unique preferences.
 
-Looking for a blog template with a bit more personality? Check out [astro-blog-template](https://github.com/Charca/astro-blog-template) by [Maxi Ferreira](https://twitter.com/Charca).
+## Intelligent Living with Kaleem AI
+
+(from our Smart Home AI Assistant vision document)
+
+*   **Personality & Customization:** Users choose the AI’s name, voice, and character, allowing for a truly personalized interaction.
+*   **Natural Device Control:** Interact with your home or office naturally using intuitive commands like “I’m hot,” or “It’s dark here,” eliminating the need for complex technical jargon.
+*   **Safety & Care:** Our systems are designed to detect emergencies, protect children, support elderly family members, and ensure workplace safety, providing peace of mind.
+*   **Family-like Relationship:** The AI remembers habits, passes messages, and acts like a helpful companion, fostering a sense of connection and support within the home or office environment.
+
+## About Us
+Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
+
+At Kaleem, we believe your home should be more than walls and wires — it should feel like a close friend that understands, cares, and interacts with you.
+
+## Mission & Vision
+**Mission:** To deliver seamless smart home solutions that connect people with their living spaces in natural, human ways.
+
+**Vision:** A future where every home in Iraq — and beyond — becomes a smart, helpful companion, powered by AI and supported by locally built technology.
