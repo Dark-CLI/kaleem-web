@@ -3,12 +3,12 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const { frontmatter } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={frontmatter.title} description={frontmatter.description} />
+		<BaseHead title={title} description={description} />
 		<style>
 			.prose {
 				max-width: 100ch;
