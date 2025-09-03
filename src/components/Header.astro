@@ -61,9 +61,11 @@ if (locale === 'ar') {
                     </HeaderLink>
                 </li>
             ))}
-            <li><ThemeToggleButton /></li>
-            <li><LanguageSwitcher /></li>
         </ul>
+    </div>
+    <div class="mobile-utility-buttons">
+        <ThemeToggleButton />
+        <LanguageSwitcher />
     </div>
 </div>
 
@@ -79,10 +81,10 @@ body {
 
 header {
     margin: 0;
-    padding: 0 1em; /* Adjusted for mobile */
+    padding: 0.8em 1.5em; /* Increased padding for a more modern feel */
     background: var(--header-bg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(var(--gray), 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    border-bottom: none; /* Remove border for cleaner look */
     position: relative;
     min-height: 4.5rem;
     display: flex;
@@ -97,7 +99,7 @@ nav {
 }
 
 .logo-link img {
-    height: 2rem;
+    height: 2.5rem; /* Slightly larger logo */
     width: auto;
     display: block;
 }
@@ -109,16 +111,17 @@ nav {
     cursor: pointer;
     color: var(--header-text);
     padding: 0.5em;
+    transition: transform 0.3s ease; /* Smooth transition for potential animation */
 }
 
 .hamburger-menu:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Temporary: Add hover effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
     border-radius: 5px;
 }
 
 .hamburger-menu svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem; /* Slightly larger icon */
+    height: 1.8rem;
 }
 
 .desktop-nav-links {
@@ -134,19 +137,27 @@ nav {
     height: 100vh; /* Full viewport height */
     background-color: var(--header-bg);
     color: var(--header-text);
-    padding: 20px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px; /* Base padding */
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1); /* Softer shadow */
     transition: right 0.3s ease; /* Smooth slide-in/out */
     z-index: 1000;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Distribute content vertically */
     align-items: center;
 }
 
 .off-canvas-menu.open {
     right: 0; /* Slide into view */
+}
+
+.mobile-nav-links {
+    flex-grow: 1; /* Allows it to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center links vertically */
+    width: 100%;
 }
 
 .mobile-nav-links ul {
@@ -157,31 +168,60 @@ nav {
 }
 
 .mobile-nav-links li {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* More spacing between links */
 }
 
 .mobile-nav-links a {
     color: var(--header-text);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5em; /* Larger font size for mobile links */
+    font-weight: 600; /* Slightly bolder */
     display: block;
-    padding: 5px 0;
+    padding: 10px 0;
+    transition: color 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
 }
 
 .mobile-nav-links a:hover {
-    text-decoration: underline;
+    color: var(--accent); /* Accent color on hover */
+    background-color: rgba(var(--gray), 0.1); /* Subtle background on hover */
+}
+
+.mobile-utility-buttons {
+    display: flex;
+    flex-direction: row; /* Changed to row */
+    gap: 15px; /* Space between buttons */
+    width: 100%;
+    padding-top: 20px; /* Space from navigation links */
+    border-top: 1px solid rgba(var(--gray), 0.2); /* Separator line */
+    margin-top: auto; /* Push to bottom */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+.mobile-utility-buttons .theme-toggle-button,
+.mobile-utility-buttons .language-switcher {
+    width: 100%;
+    padding: 12px 0; /* Larger touch area */
+    font-size: 1.1em;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+.mobile-utility-buttons .theme-toggle-button:hover,
+.mobile-utility-buttons .language-switcher:hover {
+    background-color: rgba(var(--gray), 0.15); /* Slightly more pronounced hover */
 }
 
 .close-button {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     background: none;
     border: none;
     color: var(--header-text);
-    font-size: 30px;
+    font-size: 2.5em; /* Larger close icon */
     cursor: pointer;
     padding: 5px;
+    z-index: 1001; /* Ensure it's above other content */
 }
 
 /* Overlay styles */
@@ -191,7 +231,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -211,7 +251,7 @@ body.menu-open {
 /* Desktop styles */
 @media (min-width: 769px) {
     header {
-        padding: 0 2em; /* Restore desktop padding */
+        padding: 0.8em 2em; /* Consistent padding with mobile */
     }
 
     .hamburger-menu {
@@ -221,12 +261,12 @@ body.menu-open {
     .desktop-nav-links {
         display: flex; /* Show desktop links */
         align-items: center;
-        gap: 0.5em;
+        gap: 1em; /* More space between desktop links */
     }
 
     .desktop-nav-links .internal-links {
         display: flex;
-        gap: 0.5em;
+        gap: 1em;
     }
 
     .desktop-nav-links .internal-links a {
@@ -259,6 +299,7 @@ body.menu-open {
         overflow: auto; /* Restore body overflow on desktop */
     }
 }
+
 </style>
 
 <script is:inline>
