@@ -1,8 +1,10 @@
 ---
-layout: ../layouts/MarkdownPage.astro
-title: "Kaleem - Smart Home Solutions"
-description: "Making every house smart."
+layout: ../../layouts/MarkdownPage.astro
+title: "كليم - حلول المنزل الذكي"
+description: "جعل كل منزل ذكياً."
 ---
+
+<!-- TODO: Translate the rest of this content to Arabic -->
 
 # Your home should be more than walls and wires.
 
@@ -29,8 +31,8 @@ Kaleem strategically targets key sectors to bring smart living to a wider audien
 *   **Safety & Care:** Our systems are designed to detect emergencies, protect children, support elderly family members, and ensure workplace safety, providing peace of mind.
 *   **Family-like Relationship:** The AI remembers habits, passes messages, and acts like a helpful companion, fostering a sense of connection and support within the home or office environment.
 
-
-rofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
+## About Us
+Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
 
 At Kaleem, we believe your home should be more than walls and wires — it should feel like a close friend that understands, cares, and interacts with you.
 

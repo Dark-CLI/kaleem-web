@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
 
 :root {
   --accent: #E96D77;
@@ -15,18 +10,47 @@
   --gray-gradient: rgba(240, 242, 245, 50%), #fff;
   --box-shadow:
     0 1px 3px rgba(0,0,0, 12%), 0 1px 2px rgba(0,0,0, 24%);
+  --bg-color: #f6f8fa;
+  --header-bg: #ffffff;
+  --header-text: rgb(var(--black));
 }
+
+html[data-theme='dark'] {
+  --accent: #E96D77;
+  --accent-dark: #D45C66;
+  --black: 240, 242, 245;
+  --gray: 100, 100, 100;
+  --gray-light: 30, 35, 42;
+  --gray-dark: 240, 242, 245;
+  --gray-gradient: rgba(30, 35, 42, 50%), #0d1117;
+  --box-shadow:
+    0 1px 3px rgba(240, 242, 245, 12%), 0 1px 2px rgba(240, 242, 245, 24%);
+  --bg-color: #0d1117;
+  --header-bg: #161b22;
+  --header-text: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: "Tajawal", sans-serif;
   margin: 0;
   padding: 0;
   text-align: left;
-  background-color: #f6f8fa;
+  background-color: var(--bg-color);
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
   font-size: 20px;
   line-height: 1.7;
+  animation: fadeIn 0.4s ease-in-out;
 }
 main {
   max-width: calc(100% - 2em);
@@ -64,9 +88,11 @@ b {
 }
 a {
   color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 a:hover {
-  color: var(--accent);
+  color: var(--accent-dark);
 }
 p {
   margin-bottom: 1em;
@@ -111,6 +137,48 @@ hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
 }
+
+/* Form Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 16px;
+  padding: 0.8em 1em;
+  background-color: rgb(var(--gray-light));
+  border: 1px solid transparent;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(var(--accent), 0.2);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: white;
+  background-color: var(--accent-dark);
+}
+
+
 @media (max-width: 720px) {
   body {
     font-size: 18px;
