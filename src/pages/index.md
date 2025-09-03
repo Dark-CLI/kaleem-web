@@ -30,7 +30,8 @@ Kaleem strategically targets key sectors to bring smart living to a wider audien
 *   **Family-like Relationship:** The AI remembers habits, passes messages, and acts like a helpful companion, fostering a sense of connection and support within the home or office environment.
 
 
-rofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
+
+onments.
 
 At Kaleem, we believe your home should be more than walls and wires — it should feel like a close friend that understands, cares, and interacts with you.
 

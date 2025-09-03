@@ -1,24 +1,22 @@
 ---
 layout: ../../layouts/MarkdownPage.astro
 title: "اتصل بنا"
-description: "تواصل مع حلول كليم للمنزل الذكي."
+description: "تواصل مع حلول كليم للبيوت الذكية."
 ---
 
-<!-- TODO: Translate the rest of this content to Arabic -->
+## تواصل معنا
 
-## Get in Touch
+نحب أن نسمع منك! سواء كانت لديك أسئلة حول حلولنا للمنازل الذكية، أو تحتاج إلى دعم، أو ترغب في مناقشة مشروع، فلا تتردد في التواصل معنا.
 
-We'd love to hear from you! Whether you have questions about our smart home solutions, need support, or want to discuss a project, feel free to reach out.
+### موقعنا
+البصرة، العراق
 
-### Our Location
-Basra, Iraq
+### راسلنا عبر البريد الإلكتروني
 
-### Email Us
+*   **للاستفسارات العامة:** info@kaleem.dev
+*   **للمبيعات:** sales@kaleem.dev
+*   **للدعم:** support@kaleem.dev
+*   **للشراكات:** partners@kaleem.dev
 
-*   **General Inquiries:** info@kaleem.dev
-*   **Sales:** sales@kaleem.dev
-*   **Support:** support@kaleem.dev
-*   **Partnerships:** partners@kaleem.dev
-
-### Call Us
+### اتصل بنا
 +964 7811 000 302

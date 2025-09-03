@@ -1,11 +1,6 @@
 {
-  "header": {
-    "home": "Home",
-    "solutions": "Solutions",
-    "contact": "Contact",
-    "toggle_navigation": "Toggle navigation"
-  },
-  "footer": {
-    "all_rights_reserved": "Kaleem Smart Home Solutions. All rights reserved."
-  }
+  "nav.home": "Home",
+  "nav.solutions": "Solutions",
+  "nav.about": "About",
+  "nav.contact": "Contact"
 }

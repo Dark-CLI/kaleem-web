@@ -1,6 +1,15 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import ThemeToggleButton from './ThemeToggleButton.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+// Import translation dictionaries
+import en from '../i18n/en.json';
+import ar from '../i18n/ar.json';
+
+const locale = Astro.currentLocale;
+const t = locale === 'ar' ? ar : en;
 ---
 
 <header>
@@ -10,12 +19,13 @@ import ThemeToggleButton from './ThemeToggleButton.astro';
 		</a>
 		<div class="nav-links">
 			<div class="internal-links">
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/solutions">Solutions</HeaderLink>
-				<HeaderLink href="/about">About</HeaderLink>
-				<HeaderLink href="/contact">Contact</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(locale, '/')}>{t['nav.home']}</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(locale, 'solutions')}>{t['nav.solutions']}</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(locale, 'about')}>{t['nav.about']}</HeaderLink>
+				<HeaderLink href={getRelativeLocaleUrl(locale, 'contact')}>{t['nav.contact']}</HeaderLink>
 			</div>
 			<ThemeToggleButton />
+			<LanguageSwitcher />
 		</div>
 	</nav>
 </header>

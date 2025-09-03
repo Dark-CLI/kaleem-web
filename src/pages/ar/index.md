@@ -1,42 +1,37 @@
 ---
 layout: ../../layouts/MarkdownPage.astro
-title: "كليم - حلول المنزل الذكي"
-description: "جعل كل منزل ذكياً."
+title: "كليم - حلول البيوت الذكية"
+description: "نجعل كل بيت ذكيًا."
 ---
 
-<!-- TODO: Translate the rest of this content to Arabic -->
+# بيتك يجب أن يكون أكثر من مجرد جدران وأسلاك.
 
-# Your home should be more than walls and wires.
+كليم هي شركة حلول بيوت ذكية مقرها في العراق، ورسالتها بسيطة: جعل كل بيت ذكيًا. نقوم بتحديث المنازل القائمة أو بناء أنظمة ذكية من الصفر، محولين المساحات العادية إلى بيئات ذكية ومتجاوبة.
 
-Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
+في كليم، نؤمن بأن بيتك يجب أن يكون كصديق مقرب يفهمك، يهتم بك، ويتفاعل معك.
 
-At Kaleem, we believe your home should feel like a close friend that understands, cares, and interacts with you.
+[اعرف المزيد عن حلولنا](/ar/solutions)
 
-[Learn More About Our Solutions](/solutions)
+## تركيزنا
 
-## Our Focus
+تستهدف كليم بشكل استراتيجي قطاعات رئيسية لجلب الحياة الذكية لجمهور أوسع:
 
-Kaleem strategically targets key sectors to bring smart living to a wider audience:
+*   **المجمعات السكنية:** نشر بنية تحتية واسعة النطاق للبيوت الذكية عبر مشاريع سكنية كاملة، مما يخلق مجتمعات ذكية متكاملة.
+*   **الشركات:** توفير الأتمتة الذكية، والأمان المعزز، وحلول كفاءة الطاقة المحسنة لبيئات تجارية متنوعة، بما في ذلك المكاتب، ومتاجر التجزئة، ومنشآت الضيافة.
+*   **المنازل الخاصة:** تقديم حلول بيوت ذكية مخصصة لأصحاب المنازل الذين يسعون لمساحة معيشة أذكى، وأكثر أمانًا، وأسهل استخدامًا ومخصصة لتفضيلاتهم الفريدة.
 
-*   **Residential Complexes:** Deploying large-scale smart home infrastructure across entire housing projects, creating integrated smart communities.
-*   **Businesses:** Providing smart automation, enhanced security, and optimized energy efficiency solutions for diverse commercial environments, including offices, retail spaces, and hospitality venues.
-*   **Private Homes:** Delivering tailored smart home solutions for individual homeowners seeking a smarter, safer, and more user-friendly living space customized to their unique preferences.
+## حياة ذكية مع ذكاء كليم الاصطناعي
 
-## Intelligent Living with Kaleem AI
+*   **شخصية وتخصيص:** يختار المستخدمون اسم المساعد الذكي، صوته، وشخصيته، مما يتيح تفاعلًا شخصيًا حقيقيًا.
+*   **تحكم طبيعي بالأجهزة:** تفاعل مع منزلك أو مكتبك بشكل طبيعي باستخدام أوامر بديهية مثل "أشعر بالحر" أو "المكان مظلم هنا"، مما يلغي الحاجة إلى المصطلحات التقنية المعقدة.
+*   **الأمان والرعاية:** تم تصميم أنظمتنا لاكتشاف حالات الطوارئ، وحماية الأطفال، ودعم كبار السن من أفراد الأسرة، وضمان سلامة مكان العمل، مما يوفر راحة البال.
+*   **علاقة شبيهة بالأسرة:** يتذكر المساعد الذكي العادات، ويمرر الرسائل، ويعمل كرفيق مساعد، مما يعزز الشعور بالاتصال والدعم داخل المنزل أو بيئة العمل.
 
-(from our Smart Home AI Assistant vision document)
+ أو بناء أنظمة ذكية من الصفر، محولين المساحات العادية إلى بيئات ذكية ومتجاوبة.
 
-*   **Personality & Customization:** Users choose the AI’s name, voice, and character, allowing for a truly personalized interaction.
-*   **Natural Device Control:** Interact with your home or office naturally using intuitive commands like “I’m hot,” or “It’s dark here,” eliminating the need for complex technical jargon.
-*   **Safety & Care:** Our systems are designed to detect emergencies, protect children, support elderly family members, and ensure workplace safety, providing peace of mind.
-*   **Family-like Relationship:** The AI remembers habits, passes messages, and acts like a helpful companion, fostering a sense of connection and support within the home or office environment.
+في كليم، نؤمن بأن بيتك يجب أن يكون أكثر من مجرد جدران وأسلاك — يجب أن يكون كصديق مقرب يفهمك، يهتم بك، ويتفاعل معك.
 
-## About Us
-Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
+## الرسالة والرؤية
+**الرسالة:** تقديم حلول بيوت ذكية سلسة تربط الناس بمساحاتهم المعيشية بطرق طبيعية وإنسانية.
 
-At Kaleem, we believe your home should be more than walls and wires — it should feel like a close friend that understands, cares, and interacts with you.
-
-## Mission & Vision
-**Mission:** To deliver seamless smart home solutions that connect people with their living spaces in natural, human ways.
-
-**Vision:** A future where every home in Iraq — and beyond — becomes a smart, helpful companion, powered by AI and supported by locally built technology.
+**الرؤية:** مستقبل يصبح فيه كل منزل في العراق — وخارجه — رفيقًا ذكيًا ومساعدًا، مدعومًا بالذكاء الاصطناعي ومدعومًا بتقنية مبنية محليًا.

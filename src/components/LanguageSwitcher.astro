@@ -1,1 +1,39 @@
- <!-- aw  -->
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const currentLocale = Astro.currentLocale;
+const otherLocale = currentLocale === 'en' ? 'ar' : 'en';
+const defaultLocale = 'en'; // As configured in astro.config.mjs
+
+let canonicalPath = Astro.url.pathname;
+const localePrefix = `/${currentLocale}`;
+
+// If the current path starts with the locale prefix, remove it to get the base path
+if (currentLocale !== defaultLocale && canonicalPath.startsWith(localePrefix)) {
+  canonicalPath = canonicalPath.substring(localePrefix.length) || '/';
+}
+
+const otherLocaleUrl = getRelativeLocaleUrl(otherLocale, canonicalPath);
+---
+
+<a href={otherLocaleUrl} class="language-switcher">
+  {otherLocale.toUpperCase()}
+</a>
+
+<style>
+  .language-switcher {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid var(--header-text);
+    border-radius: 8px;
+    color: var(--header-text);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .language-switcher:hover {
+    background-color: var(--header-text);
+    color: var(--header-bg);
+  }
+</style>

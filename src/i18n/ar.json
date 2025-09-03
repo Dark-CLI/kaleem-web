@@ -1,11 +1,6 @@
 {
-  "header": {
-    "home": "الرئيسية",
-    "solutions": "الحلول",
-    "contact": "اتصل بنا",
-    "toggle_navigation": "تبديل التنقل"
-  },
-  "footer": {
-    "all_rights_reserved": "كليم لحلول المنزل الذكي. جميع الحقوق محفوظة."
-  }
+  "nav.home": "الرئيسية",
+  "nav.solutions": "الحلول",
+  "nav.about": "من نحن",
+  "nav.contact": "اتصل بنا"
 }

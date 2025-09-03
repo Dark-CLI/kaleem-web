@@ -1,54 +1,55 @@
 ---
 layout: ../../layouts/MarkdownPage.astro
 title: "حلولنا"
-description: "استكشف حلول كليم الشاملة للمنزل الذكي، المصممة لتلبية كل الاحتياجات والميزانيات."
+description: "استكشف حلول كليم الشاملة للبيوت الذكية، المصممة لكل حاجة وميزانية."
 ---
 
-<!-- TODO: Translate the rest of this content to Arabic -->
+## حلول شاملة للبيوت الذكية
+تقدم كليم مجموعة متنوعة من حلول البيوت الذكية، المصممة بدقة لتحويل أي مساحة معيشة أو عمل إلى بيئة ذكية ومتجاوبة وبديهية. خدماتنا مصممة لتلبية المتطلبات الفريدة لكل من العقارات القائمة والمشاريع الجديدة.
 
-## Comprehensive Smart Home Solutions
-Kaleem offers a diverse range of smart home solutions, meticulously designed to transform any living or working space into an intelligent, responsive, and intuitive environment. Our services are tailored to meet the unique demands of both existing properties and new developments.
+### خدمات التحديث
+*   **ترقيات سلسة:** حوّل المنازل والمرافق التجارية القديمة إلى مساحات ذكية حديثة دون الحاجة لتجديدات واسعة.
+*   **تكامل متقدم:** ندمج الأجهزة الذكية وأجهزة الاستشعار وأنظمة الأتمتة المتطورة في بنيتك التحتية الحالية.
+*   **وظائف محسنة:** تمتع براحة وأمان وكفاءة طاقة محسنة في عقارك الحالي.
 
-### Retrofit Services
-*   **Seamless Upgrades:** Transform older homes and business facilities into modern smart spaces without extensive renovations.
-*   **Advanced Integration:** We integrate cutting-edge smart devices, sensors, and automation systems into your existing infrastructure.
-*   **Enhanced Functionality:** Enjoy improved comfort, security, and energy efficiency in your current property.
+### تركيبات جديدة
+*   **بنية تحتية ذكية متكاملة:** للمباني الجديدة والمجمعات السكنية الكبيرة، نقدم بنية تحتية ذكية كاملة من الألف إلى الياء.
+*   **منازل جاهزة للمستقبل:** تضمن تركيباتنا أن يكون عقارك الجديد مجهزًا بأحدث التقنيات الذكية، المصممة للتوسع والتكامل المستقبلي.
+*   **تخطيط شامل:** من التصميم الأولي إلى التنفيذ النهائي، نتولى كل جانب من جوانب إعداد منزلك الذكي.
 
-### New Installations
-*   **End-to-End Smart Infrastructure:** For new builds and large residential complexes, we provide complete smart infrastructure from the ground up.
-*   **Future-Ready Homes:** Our installations ensure your new property is equipped with the latest smart technology, designed for future scalability and integration.
-*   **Comprehensive Planning:** From initial design to final implementation, we handle every aspect of your smart home setup.
+### تكامل المساعد الذكي
+*   **تفاعل بديهي:** ندمج مساعدين ذكاء اصطناعي مفيدين في المنزل يتحكمون في الأجهزة، ويتعلمون روتينك، ويتفاعلون بشكل طبيعي مع العائلات أو الموظفين.
+*   **تجربة شخصية:** يتكيف ذكاؤنا الاصطناعي مع تفضيلاتك، مما يوفر تجربة منزل ذكي شخصية ومتجاوبة حقًا.
+*   **تحكم سهل:** أدر أجهزتك وأنظمتك الذكية من خلال أوامر اللغة الطبيعية، مما يجعل المهام اليومية أبسط وأكثر كفاءة.
 
-### AI Assistant Integration
-*   **Intuitive Interaction:** We embed helpful in-home AI assistants that control devices, learn your routines, and interact naturally with families or employees.
-*   **Personalized Experience:** Our AI adapts to your preferences, providing a truly personalized and responsive smart home experience.
-*   **Effortless Control:** Manage your smart devices and systems through natural language commands, making daily tasks simpler and more efficient.
+### نطاقات أسعار مرنة
+*   **حلول لكل ميزانية:** تقدم كليم مجموعة واسعة من الخيارات، من الإعدادات الأولية الفعالة من حيث التكلفة إلى الأنظمة المتقدمة والمتطورة.
+*   **من الأساسي إلى الخيال العلمي:** سواء كنت بحاجة إلى مفاتيح ذكية أساسية وإضاءة آلية أو ترغب في تجارب خيال علمي واقعية مع رؤية الذكاء الاصطناعي وشخصيات مخصصة، لدينا الحل.
+*   **باقات مخصصة:** نعمل معك لإنشاء باقة منزل ذكي تتوافق مع خطتك المالية وتطلعاتك التكنولوجية.
 
-### Flexible Price Ranges
-*   **Solutions for Every Budget:** Kaleem offers a wide spectrum of options, from cost-efficient starter setups to advanced, high-end systems.
-*   **Basic to Sci-Fi:** Whether you need essential smart switches and automated lighting or desire realistic sci-fi experiences with AI vision and custom personalities, we have a solution for you.
-*   **Tailored Packages:** We work with you to create a smart home package that aligns with your financial plan and technological aspirations.
+### تطوير الأجهزة في المستقبل
+*   **ابتكار للاحتياجات المحلية:** نعمل بنشاط على تطوير ونستعد لإنتاج أجهزتنا الذكية التي تحمل علامتنا التجارية.
+*   **مصممة خصيصًا للعراق:** سيتم تصميم أجهزتنا المستقبلية خصيصًا لتلبية المتطلبات والتفضيلات الفريدة للمنازل والشركات العراقية.
+*   **تقنية رائدة:** تؤكد هذه المبادرة التزامنا بقيادة سوق المنازل الذكية بحلول متقدمة وذات صلة محليًا.
 
-### Future Hardware Development
-*   **Innovation for Local Needs:** We are actively developing and preparing to produce our own branded smart devices.
-*   **Tailored for Iraq:** Our future hardware will be specifically designed to meet the unique requirements and preferences of Iraqi homes and businesses.
-*   **Pioneering Technology:** This initiative underscores our commitment to leading the smart home market with locally relevant and advanced solutions.
+## لماذا تختار كليم؟
 
-## Why Choose Kaleem?
+في كليم، نتميز في صناعة المنازل الذكية من خلال تقديم حلول لا مثيل لها مصممة خصيصًا لاحتياجاتك. إليك ما يجعلنا الخيار المفضل:
 
-At Kaleem, we stand out in the smart home industry by offering unparalleled solutions tailored to your needs. Here's what makes us the preferred choice:
+### حصريًا في العراق
+*   **نحن الشركة الوحيدة** التي تقدم نظام منزل ذكي متكامل في العراق اليوم. يدمج نهجنا الفريد التكنولوجيا المتطورة مع فهم عميق للاحتياجات المحلية، مما يوفر حلولًا فريدة من نوعها حقًا في المنطقة.
 
-### Exclusive in Iraq
-*   **We are the only company** delivering a full-experience smart home system in Iraq today. Our unique approach integrates cutting-edge technology with a deep understanding of local needs, providing solutions that are truly one-of-a-kind in the region.
+### تصميم محوره الإنسان
+*   تتمحور فلسفتنا حول جعل التكنولوجيا تبدو كامتداد طبيعي لمنزلك. تم تصميم أنظمة الذكاء الاصطناعي المتقدمة لدينا لجعل منزلك أو مكتبك يشعر وكأنه جزء من العائلة، مما يعزز التفاعلات البديهية بدلاً من مجرد التحكم في الأدوات.
 
-### Human-Centered Design
-*   Our philosophy centers around making technology feel like a natural extension of your home. Our advanced AI systems are designed to make your home or office feel like a part of the family, fostering intuitive interactions rather than just controlling gadgets.
+### الخصوصية والأمان أولاً
+*   راحة بالك هي أولويتنا القصوى. نضمن حماية قوية للبيانات من خلال **المعالجة المحلية** للمعلومات، وتوفير إمكانيات **العمل دون اتصال بالإنترنت**، واستخدام **كود تم التحقق منه من طرف ثالث**. يضمن هذا الالتزام أعلى مستويات الأمان والخصوصية لمساحتك الشخصية.
 
-### Privacy & Security First
-*   Your peace of mind is our top priority. We ensure robust data protection through **local processing** of information, offering **offline mode** capabilities, and utilizing **third-party verified code**. This commitment guarantees the highest levels of safety and privacy for your personal space.
+### تقنية قابلة للتطوير
+*   تم بناء أنظمة المنازل الذكية من كليم لتتطور مع نمط حياتك. سواء كنت تبدأ بأتمتة أساسية أو تتخيل بيئة شاملة تعتمد على الذكاء الاصطناعي، فإن حلولنا **قابلة للتطوير**. تنمو بسلاسة من عناصر التحكم البسيطة إلى رؤية الذكاء الاصطناعي الكاملة ودعم الرعاية الشامل، وتتكيف مع احتياجاتك المتغيرة.
 
-### Scalable Technology
-*   Kaleem's smart home systems are built to evolve with your lifestyle. Whether you're starting with basic automation or envisioning a comprehensive AI-driven environment, our solutions are **scalable**. They seamlessly grow from simple controls to full AI vision and comprehensive care support, adapting to your changing needs.
+### لكل ميزانية
+*   نعتقد أن الحياة الذكية يجب أن تكون في متناول الجميع. تقدم كليم مجموعة واسعة من الحلول لتناسب **أي ميزانية**. من الإعدادات الأولية الفعالة من حيث التكلفة التي توفر وظائف ذكية أساسية إلى البيئات المستقبلية المصممة خصيصًا والمتطورة، نقدم تجارب مخصصة دون تنازلات.
 
-### For Every Budget
-*   We believe smart living should be accessible to everyone. Kaleem offers a wide range of solutions to fit **any budget**. From cost-efficient starter setups that provide essential smart functionalities to custom-designed, high-end futuristic environments, we deliver tailored experiences without compromise.
+### إنتاج محلي
+*   التزامنا بالاقتصاد المحلي لا يتزعزع. تلتزم كليم **بإنتاج أجهزتنا الذكية التي تحمل علامتنا التجارية** هنا في العراق. هذا لا يضمن فقط أن منتجاتنا مناسبة تمامًا للسوق المحلي ولكنه يدعم أيضًا النمو والابتكار الإقليمي.

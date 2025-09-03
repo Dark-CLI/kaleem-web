@@ -22,8 +22,6 @@ Kaleem strategically targets key sectors to bring smart living to a wider audien
 
 ## Intelligent Living with Kaleem AI
 
-(from our Smart Home AI Assistant vision document)
-
 *   **Personality & Customization:** Users choose the AI’s name, voice, and character, allowing for a truly personalized interaction.
 *   **Natural Device Control:** Interact with your home or office naturally using intuitive commands like “I’m hot,” or “It’s dark here,” eliminating the need for complex technical jargon.
 *   **Safety & Care:** Our systems are designed to detect emergencies, protect children, support elderly family members, and ensure workplace safety, providing peace of mind.
