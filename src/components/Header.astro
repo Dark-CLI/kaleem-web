@@ -29,7 +29,14 @@ if (locale === 'ar') {
 		<a href="/" class="logo-link">
 			<img src="/images/logo.svg" alt="Kaleem Logo" />
 		</a>
-		<div class="nav-links">
+		<button class="hamburger-menu" id="menu-toggle" aria-label="Toggle navigation">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+		</button>
+		<div class="desktop-nav-links">
 			<div class="internal-links">
 				{navLinks.map(link => (
 					<HeaderLink href={getRelativeLocaleUrl(locale, link.href)}>
@@ -42,46 +49,257 @@ if (locale === 'ar') {
 		</div>
 	</nav>
 </header>
+
+<div id="off-canvas-menu" class="off-canvas-menu">
+    <button id="close-menu" class="close-button">&times;</button>
+    <div class="mobile-nav-links">
+        <ul>
+            {navLinks.map(link => (
+                <li>
+                    <HeaderLink href={getRelativeLocaleUrl(locale, link.href)}>
+                        {link.text}
+                    </HeaderLink>
+                </li>
+            ))}
+            <li><ThemeToggleButton /></li>
+            <li><LanguageSwitcher /></li>
+        </ul>
+    </div>
+</div>
+
+<div id="menu-overlay" class="menu-overlay"></div>
+
 <style>
-	header {
-		margin: 0;
-		padding: 0 2em;
-		background: var(--header-bg);
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Base styles (mobile-first) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll when menu is off-screen */
+}
+
+header {
+    margin: 0;
+    padding: 0 1em; /* Adjusted for mobile */
+    background: var(--header-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(var(--gray), 0.5);
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-  .logo-link img {
+    position: relative;
+    min-height: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-link img {
     height: 2rem;
     width: auto;
     display: block;
-  }
-	.nav-links {
-		display: flex;
-		align-items: center;
-		gap: 0.5em;
-	}
-	.internal-links {
-		display: flex;
-		gap: 0.5em;
-	}
-	.internal-links a {
-		padding: 1.75em 1em;
-		color: var(--header-text);
-		text-decoration: none;
-		border-bottom: 2px solid transparent;
-		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	}
-	.internal-links a:hover {
-		color: var(--accent-dark);
-		border-bottom-color: var(--accent-dark);
-	}
-	.internal-links a.active {
-		color: var(--accent);
-		border-bottom-color: var(--accent);
-	}
+}
+
+.hamburger-menu {
+    display: block; /* Visible on mobile */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--header-text);
+    padding: 0.5em;
+}
+
+.hamburger-menu:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Temporary: Add hover effect */
+    border-radius: 5px;
+}
+
+.hamburger-menu svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.desktop-nav-links {
+    display: none; /* Hidden on mobile */
+}
+
+/* Off-canvas menu styles */
+.off-canvas-menu {
+    position: fixed;
+    top: 0;
+    right: -80%; /* Initially hidden off-screen to the right */
+    width: 80%;
+    height: 100vh; /* Full viewport height */
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease; /* Smooth slide-in/out */
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.off-canvas-menu.open {
+    right: 0; /* Slide into view */
+}
+
+.mobile-nav-links ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 15px;
+}
+
+.mobile-nav-links a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 5px 0;
+}
+
+.mobile-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: var(--header-text);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Overlay styles */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Body scroll lock when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    header {
+        padding: 0 2em; /* Restore desktop padding */
+    }
+
+    .hamburger-menu {
+        display: none; /* Hide hamburger on desktop */
+    }
+
+    .desktop-nav-links {
+        display: flex; /* Show desktop links */
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .desktop-nav-links .internal-links {
+        display: flex;
+        gap: 0.5em;
+    }
+
+    .desktop-nav-links .internal-links a {
+        padding: 1.75em 1em;
+        color: var(--header-text);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .desktop-nav-links .internal-links a:hover {
+        color: var(--accent-dark);
+        border-bottom-color: var(--accent-dark);
+    }
+
+    .desktop-nav-links .internal-links a.active {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+    }
+
+    .off-canvas-menu {
+        display: none; /* Hide off-canvas menu on desktop */
+    }
+
+    .menu-overlay {
+        display: none; /* Hide overlay on desktop */
+    }
+
+    body.menu-open {
+        overflow: auto; /* Restore body overflow on desktop */
+    }
+}
 </style>
+
+<script is:inline>
+  console.log('Script loaded and running.');
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded fired.');
+    const menuToggle = document.getElementById('menu-toggle');
+    const offCanvasMenu = document.getElementById('off-canvas-menu');
+    const closeMenuButton = document.getElementById('close-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const body = document.body;
+
+    console.log('Elements found:', {
+      menuToggle: !!menuToggle,
+      offCanvasMenu: !!offCanvasMenu,
+      closeMenuButton: !!closeMenuButton,
+      menuOverlay: !!menuOverlay,
+      body: !!body
+    });
+
+    function openMenu() {
+        console.log('openMenu called.');
+        offCanvasMenu.classList.add('open');
+        menuOverlay.classList.add('visible');
+        body.classList.add('menu-open');
+    }
+
+    function closeMenu() {
+        console.log('closeMenu called.');
+        offCanvasMenu.classList.remove('open');
+        menuOverlay.classList.remove('visible');
+        body.classList.remove('menu-open');
+    }
+
+    if (menuToggle && offCanvasMenu && closeMenuButton && menuOverlay && body) {
+        console.log('Attaching event listeners.');
+        menuToggle.addEventListener('click', openMenu);
+        closeMenuButton.addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+    } else {
+        console.error('One or more elements not found, cannot attach event listeners.');
+    }
+  });
+</script>

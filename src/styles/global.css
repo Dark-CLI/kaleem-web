@@ -39,10 +39,16 @@ html[data-theme='dark'] {
   }
 }
 
-body {
-  font-family: "Tajawal", sans-serif;
+html, body { /* Added */
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  /* margin: 0; REMOVED */
+  /* padding: 0; REMOVED */
   background-color: var(--bg-color);
   word-wrap: break-word;
   overflow-wrap: break-word;
