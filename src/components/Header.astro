@@ -18,10 +18,7 @@ const navLinks = [
   { href: '/contact', text: t['nav.contact'] },
 ];
 
-// Reverse the order if the locale is Arabic
-if (locale === 'ar') {
-  navLinks.reverse();
-}
+
 ---
 
 <header>
@@ -36,7 +33,7 @@ if (locale === 'ar') {
 				<line x1="3" y1="18" x2="21" y2="18"></line>
 			</svg>
 		</button>
-		<div class="desktop-nav-links">
+		<div class="desktop-nav-links" class:list={{ 'rtl-desktop': locale === 'ar' }}>
 			<div class="internal-links">
 				{navLinks.map(link => (
 					<HeaderLink href={getRelativeLocaleUrl(locale, link.href)}>
@@ -267,6 +264,10 @@ body.menu-open {
     .desktop-nav-links .internal-links {
         display: flex;
         gap: 1em;
+    }
+
+    .desktop-nav-links.rtl-desktop .internal-links {
+        flex-direction: row-reverse;
     }
 
     .desktop-nav-links .internal-links a {
