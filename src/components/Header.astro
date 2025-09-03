@@ -10,6 +10,18 @@ import ar from '../i18n/ar.json';
 
 const locale = Astro.currentLocale;
 const t = locale === 'ar' ? ar : en;
+
+const navLinks = [
+  { href: '/', text: t['nav.home'] },
+  { href: '/solutions', text: t['nav.solutions'] },
+  { href: '/about', text: t['nav.about'] },
+  { href: '/contact', text: t['nav.contact'] },
+];
+
+// Reverse the order if the locale is Arabic
+if (locale === 'ar') {
+  navLinks.reverse();
+}
 ---
 
 <header>
@@ -19,10 +31,11 @@ const t = locale === 'ar' ? ar : en;
 		</a>
 		<div class="nav-links">
 			<div class="internal-links">
-				<HeaderLink href={getRelativeLocaleUrl(locale, '/')}>{t['nav.home']}</HeaderLink>
-				<HeaderLink href={getRelativeLocaleUrl(locale, 'solutions')}>{t['nav.solutions']}</HeaderLink>
-				<HeaderLink href={getRelativeLocaleUrl(locale, 'about')}>{t['nav.about']}</HeaderLink>
-				<HeaderLink href={getRelativeLocaleUrl(locale, 'contact')}>{t['nav.contact']}</HeaderLink>
+				{navLinks.map(link => (
+					<HeaderLink href={getRelativeLocaleUrl(locale, link.href)}>
+						{link.text}
+					</HeaderLink>
+				))}
 			</div>
 			<ThemeToggleButton />
 			<LanguageSwitcher />
