@@ -216,3 +216,10 @@ textarea:focus {
   padding-left: 0;
   padding-right: 20px;
 }
+
+/* Aggressive border removal for buttons and links */
+button, a {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

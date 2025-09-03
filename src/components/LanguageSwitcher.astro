@@ -22,19 +22,32 @@ const otherLocaleUrl = getRelativeLocaleUrl(otherLocale, canonicalPath);
 
 <style>
   .language-switcher {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-decoration: none;
     padding: 0.5em 1em;
-    border: 1px solid var(--header-text);
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
     border-radius: 8px;
     color: var(--header-text);
-    text-decoration: none;
     font-weight: 700;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     font-size: 0.9em;
   }
 
   .language-switcher:hover {
-    background-color: var(--header-text);
-    color: var(--header-bg);
+    background-color: rgba(128, 128, 128, 0.1);
+    color: var(--header-text);
+  }
+
+  .icon {
+    width: 1.1rem;
+    height: 1.1rem;
   }
 </style>
