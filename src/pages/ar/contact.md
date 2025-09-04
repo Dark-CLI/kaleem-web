@@ -1,22 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPage.astro
-title: "اتصل بنا"
-description: "تواصل مع حلول كليم للبيوت الذكية."
+title: "تواصل معنا"
+description: "تواصل مع كليم لحلول المنازل الذكية."
 ---
 
-## تواصل معنا
+# تواصل معنا
 
-نحب أن نسمع منك! سواء كانت لديك أسئلة حول حلولنا للمنازل الذكية، أو تحتاج إلى دعم، أو ترغب في مناقشة مشروع، فلا تتردد في التواصل معنا.
-
-### موقعنا
-البصرة، العراق
+- الهاتف: +964 781 100 0302  
+- واتساب: [مراسلة الآن](https://wa.me/9647811000302)  
+- العنوان: البصرة، العراق
 
 ### راسلنا عبر البريد الإلكتروني
 
-*   **للاستفسارات العامة:** info@kaleem.dev
-*   **للمبيعات:** sales@kaleem.dev
-*   **للدعم:** support@kaleem.dev
-*   **للشراكات:** partners@kaleem.dev
-
-### اتصل بنا
-+964 7811 000 302
+- **General Inquiries:** info@kaleem.dev  
+- **Sales:** sales@kaleem.dev  
+- **Support:** support@kaleem.dev  
+- **Partnerships:** partners@kaleem.dev
