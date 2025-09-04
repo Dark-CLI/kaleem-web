@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "7732a6c58a6aedb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e2e2485c38cee08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eab10c0210261d3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "about.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "about"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5c4e8432003a9472",
+    "type": "split",
+    "children": [
+      {
+        "id": "b8d9db3c5d91d231",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50ca7be737609798",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5b87aa3fd865a317",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "229f0176221b9a20",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 218.5
+  },
+  "right": {
+    "id": "b3ee4927b11f5e20",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2b7edc4c3577e52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a040f6f8d11150c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Planing/Smart Home Index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Smart Home Index"
+            }
+          },
+          {
+            "id": "66a43a4d1a873ed3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Planing/Smart Home Index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Smart Home Index"
+            }
+          },
+          {
+            "id": "939886215a6a2ce3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d708f3ef63c6c6e7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Planing/Smart Home Index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Smart Home Index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "eab10c0210261d3d",
+  "lastOpenFiles": [
+    "ar/about.md",
+    "about.md",
+    "ar/solutions.md",
+    "ar/index.md",
+    "solutions.md",
+    "ar/features.md",
+    "ar/contact.md",
+    "index.md",
+    "features.md",
+    "contact.md",
+    "features.md.tmp",
+    "Planing/daily plan.md",
+    "Planing/Smart Home AI Assistant – End User Features`.md",
+    "Planing/Project Cost Estimation.md",
+    "Planing/AI Home assessment requirements.md",
+    "Planing/Smart Home Devices.md",
+    "Planing/Water quality sensor.md",
+    "devices/IR & RF Blaster.md",
+    "devices/Atmospheric Sensors.md",
+    "devices/Smart vacuums Cleaners.md",
+    "devices/Door Controllers.md",
+    "devices/Smart Locks.md",
+    "devices/Door Bells.md",
+    "devices/Remote Wireless Buttons.md",
+    "devices/Fire Sensors.md",
+    "devices/Pipe Water Flow, Pressure Sensors.md",
+    "devices/Tank Water Level.md",
+    "CNC/bases for light.md.covafer9.partial",
+    "CNC/Keychains.md.mijurih4.partial",
+    "CNC/Co2 Machine.md.ruduzot7.partial",
+    "CNC/Assembling buzzes.md.kucikot8.partial",
+    "CNC/Assembling buzzes-20240612104601365.webp",
+    "CNC/Assembling buzzes-20240612104601365.webp.zuxajuc5.partial",
+    "CNC/Acrylic Night Light.md.dipurih7.partial",
+    "CNC",
+    "Planing/Smart Home AI Assistant – End User Features.pdf",
+    "devices",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

@@ -1,4 +1,3 @@
-
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Kaleem — Smart Home Solutions in Iraq"

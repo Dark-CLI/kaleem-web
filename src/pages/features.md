@@ -1,4 +1,3 @@
-
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "What You Get — Kaleem"
