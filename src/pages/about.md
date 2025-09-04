@@ -37,5 +37,9 @@ At Kaleem, we stand out in the smart home industry by offering unparalleled solu
 ### For Every Budget
 *   We believe smart living should be accessible to everyone. Kaleem offers a wide range of solutions to fit **any budget**. From cost-efficient starter setups that provide essential smart functionalities to custom-designed, high-end futuristic environments, we deliver tailored experiences without compromise.
 
-### Local Production
-*   Our commitment to the local economy is unwavering. Kaleem is dedicated to **producing our own branded smart devices** right here in Iraq. This not only ensures our products are perfectly suited for the local market but also supports regional growth and innovation.
+### Jobs & Talent Development
+
+Kaleem is committed to creating real opportunities for Iraqis. Our vision goes beyond introducing new technologies — we focus on **training and empowering local talent in artificial intelligence and smart home solutions**.
+- We run training programs and workshops to build hands-on expertise.
+- We support young Iraqi engineers, developers, and technicians with practical career paths.
+- Our goal is to grow a new generation of Iraqi specialists who will lead the AI and smart living sector in the future.

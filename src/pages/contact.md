@@ -8,7 +8,7 @@ description: "Get in touch with Kaleem Smart Home Solutions."
 
 # Contact
 
-- Phone: +964 781 100 0302  
+- Phone: [+964 781 100 0302](tel:+9647811000302)
 - WhatsApp: [Chat now](https://wa.me/9647811000302)  
 - Address: Basra, Iraq
 
