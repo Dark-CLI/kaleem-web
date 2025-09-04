@@ -25,4 +25,4 @@ Kaleem solutions are designed to fit **different scales and clients**:
 - Future-ready homes and complexes with structured wiring, centralized hubs, and scalable architecture.  
 - Enterprise-ready solutions for companies, offices, and commercial spaces.  
 
-**Next:** [Learn more about us ](/about) · [Talk to us ](/contact)
+**Next:** [Learn more about us →](/about) · [Talk to us →](/contact)

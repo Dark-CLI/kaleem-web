@@ -192,4 +192,4 @@ A **history and rollback option** lets you undo mistakes instantly.
 (Voice/personality changes are only available in the app UI, not by voice command. Rollback is voice-enabled.)
 
 
-**Next:** [→ See our Solutions ](/solutions) · **Ready?** [→ Contact us ](/contact)
+**Next:** [See our Solutions →](/solutions) · **Ready?** [Contact us →](/contact)
