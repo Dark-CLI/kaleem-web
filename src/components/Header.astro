@@ -25,7 +25,8 @@ const navLinks = [
 <header>
 	<nav>
 		<a href={getRelativeLocaleUrl(locale, '/')} class="logo-link">
-			<img src="/images/logo.svg" alt="Kaleem Logo" />
+			<img src="/images/kaleem-logo/vector/default-monochrome-black.svg" alt="Kaleem Logo" class="light-logo" />
+			<img src="/images/kaleem-logo/vector/default-monochrome-white.svg" alt="Kaleem Logo" class="dark-logo" />
 		</a>
 		<button class="hamburger-menu" id="menu-toggle" aria-label="Toggle navigation">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -89,6 +90,10 @@ header {
     align-items: center;
 }
 
+html:not([data-theme='dark']) header {
+    background: rgba(242, 191, 164, 0.8);
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -101,6 +106,7 @@ nav {
     height: 2.5rem; /* Slightly larger logo */
     width: auto;
     display: block;
+    border-radius: 0; /* Remove circular clip effect */
 }
 
 .hamburger-menu {
@@ -134,7 +140,7 @@ nav {
     right: -80%; /* Initially hidden off-screen to the right */
     width: 80%;
     height: 100vh; /* Full viewport height */
-    background-color: var(--header-bg);
+    background: linear-gradient(to bottom, rgba(245, 231, 222, 0.8), rgba(242, 191, 164, 0.8));
     color: var(--header-text);
     padding: 20px; /* Base padding */
     box-shadow: -2px 0 10px rgba(0,0,0,0.1); /* Softer shadow */
@@ -145,7 +151,16 @@ nav {
     flex-direction: column;
     justify-content: space-between; /* Distribute content vertically */
     align-items: center;
+    backdrop-filter: blur(10px);
 }
+
+html[data-theme='dark'] .off-canvas-menu {
+    background: linear-gradient(to bottom, rgba(30, 34, 30, 0.8), rgba(21, 24, 21, 0.8));
+}
+
+
+
+
 
 .off-canvas-menu.open {
     right: 0; /* Slide into view */
@@ -192,7 +207,6 @@ nav {
     width: 100%;
     padding-top: 20px; /* Space from navigation links */
     border-top: 1px solid rgba(var(--gray), 0.2); /* Separator line */
-    margin-top: auto; /* Push to bottom */
     justify-content: center; /* Center buttons horizontally */
     direction: ltr;
 }
@@ -200,10 +214,12 @@ nav {
 .mobile-utility-buttons .theme-toggle-button,
 .mobile-utility-buttons .language-switcher {
     width: 100%;
-    padding: 12px 0; /* Larger touch area */
-    font-size: 1.1em;
+    padding: 15px 0; /* Larger touch area */
+    font-size: 1.2em;
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.2s ease; /* Smooth transition */
+    background-color: var(--accent);
+    color: white;
 }
 
 .mobile-utility-buttons .theme-toggle-button:hover,
@@ -302,6 +318,22 @@ body.menu-open {
     body.menu-open {
         overflow: auto; /* Restore body overflow on desktop */
     }
+}
+
+.logo-link .light-logo {
+    display: block;
+}
+
+.logo-link .dark-logo {
+    display: none;
+}
+
+html[data-theme='dark'] .logo-link .light-logo {
+    display: none;
+}
+
+html[data-theme='dark'] .logo-link .dark-logo {
+    display: block;
 }
 
 </style>

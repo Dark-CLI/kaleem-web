@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
 :root {
-  --accent: #E96D77;
-  --accent-dark: #D45C66;
-  --black: 10, 10, 10;
-  --gray: 200, 200, 200;
-  --gray-light: 240, 242, 245;
-  --gray-dark: 10, 10, 10;
-  --gray-gradient: rgba(240, 242, 245, 50%), #fff;
+  --accent: #4CAF50;
+  --accent-dark: #388E3C;
+  --black: 52, 73, 94;
+  --gray: 220, 220, 220;
+  --gray-light: 245, 245, 245;
+  --gray-dark: 52, 73, 94;
+  --gray-gradient: rgba(245, 245, 245, 50%), #fff;
   --box-shadow:
     0 1px 3px rgba(0,0,0, 12%), 0 1px 2px rgba(0,0,0, 24%);
-  --bg-color: #f6f8fa;
-  --header-bg: #ffffff;
+  --bg-color: #F5E7DE;
+  --header-bg: #FFFFFF;
   --header-text: rgb(var(--black));
 }
 
 html[data-theme='dark'] {
-  --accent: #E96D77;
-  --accent-dark: #D45C66;
-  --black: 240, 242, 245;
-  --gray: 100, 100, 100;
-  --gray-light: 30, 35, 42;
-  --gray-dark: 240, 242, 245;
-  --gray-gradient: rgba(30, 35, 42, 50%), #0d1117;
+  --accent: #4CAF50;
+  --accent-dark: #388E3C;
+  --black: 240, 255, 240;
+  --gray: 60, 70, 60;
+  --gray-light: 30, 35, 30;
+  --gray-dark: 240, 255, 240;
+  --gray-gradient: rgba(30, 35, 30, 50%), #151815;
   --box-shadow:
-    0 1px 3px rgba(240, 242, 245, 12%), 0 1px 2px rgba(240, 242, 245, 24%);
-  --bg-color: #0d1117;
-  --header-bg: #161b22;
+    0 1px 3px rgba(240, 255, 240, 12%), 0 1px 2px rgba(240, 255, 240, 24%);
+  --bg-color: #1E221E;
+  --header-bg: #151815;
   --header-text: white;
 }
 
@@ -47,9 +47,11 @@ html, body { /* Added */
 
 body {
   font-family: "Tajawal", sans-serif;
-  /* margin: 0; REMOVED */
-  /* padding: 0; REMOVED */
-  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #F5E7DE, #F2BFA4);
+  background-attachment: fixed;
+  background-size: 100% 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
@@ -57,10 +59,17 @@ body {
   line-height: 1.7;
   animation: fadeIn 0.4s ease-in-out;
 }
+
+html[data-theme='dark'] body {
+  background: linear-gradient(to bottom, #1E221E, #151815);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 main {
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 3em 1em;
+  flex-grow: 1;
 }
 h1,
 h2,

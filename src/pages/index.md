@@ -1,8 +1,10 @@
+
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Kaleem — Smart Home Solutions in Iraq"
 description: "A smart home that sees you, feels you, and speaks your language."
 ---
+
 
 # Your home should be more than walls and wires.
 

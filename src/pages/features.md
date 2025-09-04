@@ -1,21 +1,23 @@
+
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "What You Get — Kaleem"
 description: "Full overview of how a Kaleem smart home works."
 ---
 
+
 # What you get with Kaleem
 
 This isn’t about gadgets. It’s about a house that reacts to you, in plain language, every day.
 
----
+
 
 ## Privacy & Security  
 All processing is local inside the home. No data leaves the system unless you allow it.  
 Code is reviewed by cyber-security specialists and verified by third-party auditors.  
 For maximum privacy, you can enable **offline isolated mode**: no internet access, full control, no remote features.  
 
----
+
 
 ## AI Personality  
 Your AI has a **personality chosen by you**.  
@@ -24,7 +26,7 @@ Your AI has a **personality chosen by you**.
 - You can design custom personalities, including well-known voices (when legally allowed).  
 - The chosen name is how you call the AI.  
 
----
+
 
 ## Device Control & Queries  
 The AI controls devices naturally. It knows who is speaking, where they are, and which devices are nearby.  
@@ -51,7 +53,7 @@ The AI controls devices naturally. It knows who is speaking, where they are, and
 **User:** "Turn off all lights except my bedroom."  
 **AI:** *All lights off, bedroom stays on.*  
 
----
+
 
 ## Automations  
 The AI creates automation's from natural language. It fills in implied logic automatically.  
@@ -69,7 +71,7 @@ The AI creates automation's from natural language. It fills in implied logic aut
 **User:** "Every day at 7 AM, play the news in the kitchen."  
 **AI:** *Automation created.*  
 
----
+
 
 ## Device & Sensor Integration  
 All devices are integrated seamlessly: lights, motion sensors, tank level, smart locks, fire sensors, fridge, and more.  
@@ -81,7 +83,7 @@ All devices are integrated seamlessly: lights, motion sensors, tank level, smart
 **User:** "If the front door opens after midnight, notify me."  
 **AI:** *Automation set: notifications after 12 AM + doors locked if opened unexpectedly.*  
 
----
+
 
 ## Device Management & Troubleshooting  
 The AI guides you step by step when adding, removing, or fixing devices.  
@@ -96,7 +98,7 @@ The AI guides you step by step when adding, removing, or fixing devices.
 **User:** "The AC isn’t responding."  
 **AI:** *Running a quick check… connection issue found. Restarting integration now.*  
 
----
+
 
 ## AI Vision & Voice Detections  
 The AI vision system continuously detects and understands people, actions, and events.  
@@ -125,7 +127,7 @@ This data is passed into the home system so the AI can **chat, make decisions, a
 
 **AI (proactive):** *Detected baby crying for more than minute. notifying the mother.*  
 
----
+
 
 ### Smart Doorbell  
 The smart doorbell uses AI vision and voice detection to recognize who is at the door and respond appropriately.  
@@ -147,7 +149,7 @@ If someone asks for a family member, the AI tries to reach them. If they are not
 
 **AI (to guest):** *Welcome. Please wait, I’m notifying the family that you’re here.*  
 
----
+
 
 ## User Permissions & Access Control  
 Different roles for safety:  
@@ -166,7 +168,7 @@ Different roles for safety:
 **Guest:** "Turn on AC in the main room."  
 **AI:** *AC on.*  
 
----
+
 
 ## Memory (Household + Personal)  
 The AI remembers household events and personal preferences.  
@@ -178,7 +180,7 @@ The AI remembers household events and personal preferences.
 **User:** "Would you please set the AC for me."  
 **AI:** *Adjusts to your preferred 23°C setting.*  
 
----
+
 
 ## Messenger / Relay Feature  
 The AI passes messages between family members.  
@@ -194,7 +196,7 @@ The AI passes messages between family members.
 **Mother:** "Not now, but when he is finished tell him I put the dinner in the fridge."  
 **AI:** *Okay. Reminder set for Ali when he finishes studying.*  
 
----
+
 
 ## Feeling Like a Family Member  
 The AI learns and remembers your style of living.  
@@ -206,7 +208,7 @@ The AI learns and remembers your style of living.
 **User:** "Cool the room."  
 **AI:** *Sets AC to your favorite setting: 23°C with gentle airflow.*  
 
----
+
 
 ## Safety & Care  
 AI vision and sensors provide **continuous care and monitoring** for safety, children, and special needs.  
@@ -231,7 +233,7 @@ AI vision and sensors provide **continuous care and monitoring** for safety, chi
 
 **AI (proactive):** *Elderly person fell in the living room. Family notified — should I also alert your emergency contact?*  
 
----
+
 
 ## Simplified UI & History  
 The interface makes it easy to manage personalities, permissions, and the vision system.  
@@ -246,6 +248,6 @@ A **history and rollback option** lets you undo mistakes instantly.
 
 *(Voice/personality changes are only available in the app UI, not by voice command. Rollback is voice-enabled.)*  
 
----
+
 
 **Next:** [See our Solutions →](/solutions) · **Ready?** [Contact us →](/contact)

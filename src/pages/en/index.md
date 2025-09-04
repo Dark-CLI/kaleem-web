@@ -1,8 +1,10 @@
+
 ---
 layout: ../../layouts/MarkdownPage.astro
 title: "Kaleem - Smart Home Solutions"
 description: "Making every house smart."
 ---
+
 
 # Your home should be more than walls and wires.
 

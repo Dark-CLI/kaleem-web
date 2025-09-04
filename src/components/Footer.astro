@@ -1,17 +1,22 @@
 ---
 const today = new Date();
+import { getRelativeLocaleUrl } from 'astro:i18n';
+const locale = Astro.currentLocale;
 ---
 
 <footer>
 	<div class="contact">
 	&copy; {today.getFullYear()} Kaleem Smart Home Solutions. All rights reserved.
+	<p><a href={getRelativeLocaleUrl(locale, '/contact')}>Contact Us</a></p>
+	</div>
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 1em 1em;
-		background: rgb(var(--gray-light));
+		padding: 3em 1em 2em 1em;
+		background: transparent;
 		color: rgb(var(--gray-dark));
 		text-align: center;
+		border-top: 1px solid rgba(var(--gray), 0.2);
 	}
 	.contact {
 		/* margin-top: 1m; */

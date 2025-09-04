@@ -1,8 +1,10 @@
+
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Our Solutions"
 description: "Explore Kaleem's comprehensive smart home solutions, designed for every need and budget."
 ---
+
 
 ## Comprehensive Smart Home Solutions
 Kaleem offers a diverse range of smart home solutions, meticulously designed to transform any living or working space into an intelligent, responsive, and intuitive environment. Our services are tailored to meet the unique demands of both existing properties and new developments.
