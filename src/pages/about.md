@@ -11,14 +11,6 @@ It bridges **Arabic language and culture** with the challenges of modern technol
 
 For us, the name means making artificial intelligence **close to people**: speaking their language, understanding their habits, and serving their everyday life.  _Kaleem_ is a symbol of our ambition for Iraq and the Arab world to be **creators of the future, not just consumers of it**.
 
-
-## Why the name “Kaleem”
-The word “Kaleem” is our **Arabic adaptation of “AI”**.  
-It reflects our mission: bringing cutting-edge AI technology into the Arabic-speaking world.  
-
-*(Hidden note: “Kalīm” also carries a deeper cultural echo — but that’s our Easter egg for those who find it.)*
-
-
 ## Our Vision
 We believe Iraq can be more than a consumer of imported tech. Our vision is to **develop local talent, create original solutions, and design hardware produced here in Iraq**.
 
