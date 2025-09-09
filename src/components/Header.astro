@@ -11,14 +11,21 @@ import ar from '../i18n/ar.json';
 const locale = Astro.currentLocale;
 const t = locale === 'ar' ? ar : en;
 
+const currentPath = Astro.url.pathname;
+
 const navLinks = [
   { href: '/', text: t['nav.home'] },
   { href: '/solutions', text: t['nav.solutions'] },
   { href: '/features', text: t['nav.features'] },
+  { href: '/examples', text: t['nav.examples'] },
   { href: '/about', text: t['nav.about'] },
   { href: '/contact', text: t['nav.contact'] },
 ];
 
+// Reverse the order if the locale is Arabic
+if (locale === 'ar') {
+  navLinks.reverse();
+}
 
 ---
 
@@ -37,11 +44,15 @@ const navLinks = [
 		</button>
 		<div class="desktop-nav-links">
 			<div class="internal-links">
-				{navLinks.map(link => (
-					<HeaderLink href={getRelativeLocaleUrl(locale, link.href)}>
-						{link.text}
-					</HeaderLink>
-				))}
+				{navLinks.map(link => {
+					const linkHref = getRelativeLocaleUrl(locale, link.href);
+					const isActive = currentPath === linkHref || (currentPath === '/' && linkHref === getRelativeLocaleUrl(locale, '/'));
+					return (
+						<HeaderLink href={linkHref} isActive={isActive}>
+							{link.text}
+						</HeaderLink>
+					);
+				})}
 			</div>
 			<ThemeToggleButton />
 			<LanguageSwitcher />
@@ -53,13 +64,17 @@ const navLinks = [
     <button id="close-menu" class="close-button">&times;</button>
     <div class="mobile-nav-links">
         <ul>
-            {navLinks.map(link => (
-                <li>
-                    <HeaderLink href={getRelativeLocaleUrl(locale, link.href)}>
-                        {link.text}
-                    </HeaderLink>
-                </li>
-            ))}
+            {navLinks.map(link => {
+                const linkHref = getRelativeLocaleUrl(locale, link.href);
+                const isActive = currentPath === linkHref || (currentPath === '/' && linkHref === getRelativeLocaleUrl(locale, '/'));
+                return (
+                    <li>
+                        <HeaderLink href={linkHref} isActive={isActive}>
+                            {link.text}
+                        </HeaderLink>
+                    </li>
+                );
+            })}
         </ul>
     </div>
     <div class="mobile-utility-buttons">
@@ -74,7 +89,7 @@ const navLinks = [
 /* Base styles (mobile-first) */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Tajawal", sans-serif;
     overflow-x: hidden; /* Prevent horizontal scroll when menu is off-screen */
 }
 
@@ -158,10 +173,6 @@ html[data-theme='dark'] .off-canvas-menu {
     background: linear-gradient(to bottom, rgba(30, 34, 30, 0.8), rgba(21, 24, 21, 0.8));
 }
 
-
-
-
-
 .off-canvas-menu.open {
     right: 0; /* Slide into view */
 }
@@ -198,6 +209,11 @@ html[data-theme='dark'] .off-canvas-menu {
 .mobile-nav-links a:hover {
     color: var(--accent); /* Accent color on hover */
     background-color: rgba(var(--gray), 0.1); /* Subtle background on hover */
+}
+
+.mobile-nav-links a.active {
+    color: var(--accent);
+    font-weight: bold;
 }
 
 .mobile-utility-buttons {
@@ -295,6 +311,7 @@ body.menu-open {
         text-decoration: none;
         border-bottom: 2px solid transparent;
         transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        font-size: 1.1em;
     }
 
     .desktop-nav-links .internal-links a:hover {
@@ -305,6 +322,12 @@ body.menu-open {
     .desktop-nav-links .internal-links a.active {
         color: var(--accent);
         border-bottom-color: var(--accent);
+        font-weight: bold;
+    }
+
+    .mobile-nav-links a.active {
+        color: var(--accent);
+        font-weight: bold;
     }
 
     .off-canvas-menu {
@@ -318,6 +341,28 @@ body.menu-open {
     body.menu-open {
         overflow: auto; /* Restore body overflow on desktop */
     }
+}
+
+/* Styles for links within the main content area */
+main a {
+    color: var(--accent); /* Use accent color for links */
+    text-decoration: underline; /* Always show underline */
+    text-decoration-color: rgba(var(--accent), 0.5); /* Lighter underline color */
+    text-underline-offset: 0.2em; /* Space between text and underline */
+    transition: color 0.2s ease, text-decoration-color 0.2s ease, transform 0.1s ease;
+    cursor: pointer; /* Explicitly show it's clickable */
+}
+
+main a:hover,
+main a:focus {
+    color: var(--accent-dark); /* Darken text on hover/focus */
+    text-decoration-color: var(--accent); /* Make underline solid on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+main a:active {
+    color: var(--accent); /* Keep accent color on tap */
+    transform: translateY(1px); /* Slight press effect */
 }
 
 .logo-link .light-logo {
