@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Features | What A Kaleem Home Can Do"
-description: "Explore the features of a Kaleem smart home. From a voice assistant that understands Iraqi Arabic to uncompromising local-first privacy, discover how our technology adapts to you."
+description: "Explore Kaleem smart home features. Voice assistant understands Iraqi Arabic, local-first privacy. Discover how our technology adapts to you."
 ---
 
 # What a Kaleem Home Can Do

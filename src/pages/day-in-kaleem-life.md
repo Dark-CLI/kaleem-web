@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/MarkdownPage.astro
-title: "A Day with Kaleem | A Story"
+title: "Day in Kaleem Life"
 description: "Experience a day in the life of a family living with Kaleem. A short story about a home that listens, understands, and cares."
 ---
 
@@ -51,3 +51,5 @@ As the night winds down, a final command is given.
 **Kaleem:** "Goodnight. All doors are locked, the security system is active, and the living room lights will dim in 5 minutes."
 
 In the quiet of the night, the Abo Mohammed house is more than just a structure of walls and wires. It is a watchful, caring partner, listening and learning, making every day simpler and safer. It is a home with a voice. It is a home that understands.
+
+[Discover more features of Kaleem](/features)

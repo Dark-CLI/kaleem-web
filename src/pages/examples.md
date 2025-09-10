@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Kaleem in Action | Detailed Examples"
-description: "Explore an extensive collection of real-world scenarios, commands, and proactive AI responses that bring your smart home to life."
+description: "Explore real-world scenarios, commands, and proactive AI responses that bring your smart home to life."
 ---
 
 # Kaleem in Action: Detailed Examples

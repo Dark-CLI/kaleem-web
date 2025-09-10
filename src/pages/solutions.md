@@ -28,10 +28,10 @@ Create a workspace that is more secure, efficient, and productive. Our commercia
 - **Enhanced Security:** Implement intelligent access control, AI-powered monitoring, and automated alerts to protect your assets and personnel.
 - **Operational Efficiency:** Automate climate and lighting to create a comfortable environment for your team while significantly reducing energy overhead.
 - **Simplified Management:** Control your entire workspace from a single interface, giving you effortless command over your environment.
-### Our Approach: New Builds & Retrofits
+## Our Approach: New Builds & Retrofits
 
 **New Construction:** For new projects, we design the smart infrastructure from the ground up, integrating structured wiring and centralized hubs to create a robust, future-proof system.
 
 **Retrofit Services:** For existing properties, we specialize in seamlessly upgrading your space with minimal disruption, integrating smart technology into your current infrastructure.
 
-Next: [Learn About Us](/about) · Ready? [Contact Us](/contact)
+See what we can offer [Features](/features) · Get to know us more [About Us](/about) · Are you ready? [Contact Us](/contact)

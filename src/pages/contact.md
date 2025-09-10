@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Contact Us | Get in Touch with Kaleem"
-description: "Connect with Kaleem Smart Home Solutions. We're here to answer your questions and help you start your smart home journey in Iraq."
+description: "Connect with Kaleem Smart Home Solutions. Get answers to your questions and start your smart home journey in Iraq."
 ---
 
 # Get in Touch

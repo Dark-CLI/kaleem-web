@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "Kaleem | The Articulate Home | Smart Home Solutions in Iraq"
-description: "Experience the future of living with Kaleem, Iraq's premier smart home innovator. We design intelligent environments in Basra, Baghdad, and across the nation that listen, adapt, and respond to you."
+description: "Experience the future with Kaleem, Iraq's premier smart home innovator. We design intelligent environments that listen, adapt, and respond."
 ---
 
 # Your Home is Ready to Speak Your Language.
@@ -20,6 +20,6 @@ Forget the rigid commands and generic responses of imported technologies. A Kale
 
 We build more than smart houses; we create articulate homes. Homes that listen. Homes that understand. Homes that empower.
 
-Take a glimpse into [a day in the life with Kaleem](/day-in-the-life).
+Take a glimpse into [Day in Kaleem Life](/day-in-kaleem-life).
 
-[Discover the Kaleem Difference](/features)
+[Features](/features)(/features)

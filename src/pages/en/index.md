@@ -2,7 +2,7 @@
 ---
 layout: ../../layouts/MarkdownPage.astro
 title: "Kaleem - Smart Home Solutions"
-description: "Making every house smart."
+description: "Kaleem provides smart home solutions for homes and businesses in Iraq. We transform ordinary spaces into intelligent, responsive environments."
 ---
 
 

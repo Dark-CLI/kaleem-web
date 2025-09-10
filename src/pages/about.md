@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownPage.astro
 title: "About Us | The Story of Kaleem"
-description: "Learn about Kaleem, the Iraqi company pioneering a new generation of smart home technology. Our mission is to build a future where technology is created, not just consumed, in Iraq."
+description: "Learn about Kaleem, the Iraqi company pioneering smart home technology. Our mission: build a future where technology is created, not just consumed."
 ---
 
 # We Believe the Future is Built, Not Imported.
@@ -24,6 +24,6 @@ Our mission is to shift Iraq from being a consumer of foreign technology to a cr
 
 We envision a future where Iraqi ingenuity is a source of pride and progress. A future where our homes are not just smart, but wise. Where technology serves our families, protects our privacy, and strengthens our communities.
 
-From a single apartment in Basra to a sprawling development in Baghdad, we are building more than connected homes. We are building the framework for a more independent, innovative, and articulate future.
+From a single apartment in Baghdad to a sprawling development in Basra, we are building more than connected homes. We are building the framework for a more independent, innovative, and articulate future.
 
 Next: [See Our Solutions](/solutions)
