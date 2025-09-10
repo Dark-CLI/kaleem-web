@@ -1,12 +1,12 @@
 ---
 layout: ../layouts/MarkdownPage.astro
-title: "What You Get — Kaleem"
-description: "Full overview of how a Kaleem smart home works."
+title: "Kaleem Voice Assistant Features | Smart Home Iraq Basra"
+description: "Discover Kaleem voice assistant features. Smart home Iraq automation, voice control, AI monitoring for Basra families. Kaleem company technology."
 ---
 
-# What you get with Kaleem
+# Kaleem Voice Assistant Features - Smart Home Iraq Technology
 
-This isn’t about gadgets. It’s about a house that reacts to you, in plain language, every day.
+This isn't about gadgets. It's about a **Kaleem smart house** that reacts to you, in plain language, every day. Discover the power of **Kaleem voice assistant** technology designed specifically for Iraqi families.
 
 
 ## Privacy & Security  

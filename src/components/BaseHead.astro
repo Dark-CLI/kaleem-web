@@ -36,17 +36,26 @@ const businessSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Kaleem",
+  "alternateName": ["Kaleem Company", "Kaleem Iraqi Company", "Kaleem Smart Home", "Kaleem Voice Assistant"],
+  "description": "Kaleem is the leading smart home company in Iraq, specializing in AI voice assistant technology and smart house automation for Basra, Baghdad, and across Iraq.",
   "url": Astro.site,
   "logo": new URL('/images/kaleem-logo/default.png', Astro.site).href,
+  "foundingDate": "2024",
+  "founder": {
+    "@type": "Person",
+    "name": "Kaleem Team"
+  },
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+964-XXX-XXXXXXX", // Add your phone number
-    "contactType": "Customer Service"
+    "contactType": "Customer Service",
+    "areaServed": "Iraq"
   },
   "areaServed": [
     {
       "@type": "City",
-      "name": "Basra"
+      "name": "Basra",
+      "alternateName": "Smart Home Basra"
     },
     {
       "@type": "City",
@@ -54,8 +63,17 @@ const businessSchema = {
     },
     {
       "@type": "Country",
-      "name": "Iraq"
+      "name": "Iraq",
+      "alternateName": "Smart Home Iraq"
     }
+  ],
+  "knowsAbout": [
+    "Smart Home Technology",
+    "Voice Assistant",
+    "Home Automation",
+    "AI Technology",
+    "Smart House Solutions",
+    "Iraqi Technology"
   ],
   "sameAs": [
     // Add links to your social media profiles here
@@ -75,6 +93,9 @@ const businessSchema = {
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content="kaleem, kaleem smart house, kaleem iraq, kaleem smart home, kaleem company, kaleem iraqi company, kaleem basra, smart home basra, smart home iraq, kaleem voice assistant, voice assistant iraq, smart house iraq, home automation basra, kaleem technology" />
+<meta name="author" content="Kaleem" />
+<meta name="robots" content="index, follow" />
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Font Awesome -->
