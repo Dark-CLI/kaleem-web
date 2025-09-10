@@ -1,35 +1,29 @@
 ---
 layout: ../layouts/MarkdownPage.astro
-title: "About Kaleem Company | Smart Home Iraq Voice Assistant"
-description: "Learn about Kaleem Iraqi company - the leading smart home voice assistant provider in Basra, Iraq. Local talent, original solutions."
+title: "About Us | The Story of Kaleem"
+description: "Learn about Kaleem, the Iraqi company pioneering a new generation of smart home technology. Our mission is to build a future where technology is created, not just consumed, in Iraq."
 ---
 
-# About Kaleem Company - Iraq's Smart Home Voice Assistant Leader
+# We Believe the Future is Built, Not Imported.
 
-The name **Kaleem** reflects the identity of our project and our commitment to Iraq.  
-It bridges **Arabic language and culture** with the challenges of modern technology. It's our way of reshaping "AI" into something that belongs here — not imported, but rooted in our region.
+In a world saturated with generic technology, we asked a simple question: What if our homes spoke our language, understood our culture, and were built by our own innovators? That question is the foundation of Kaleem.
 
-For us, the name means making artificial intelligence **close to people**: speaking their language, understanding their habits, and serving their everyday life.  _Kaleem_ is a symbol of our ambition for Iraq and the Arab world to be **creators of the future, not just consumers of it**.
+## The Meaning of Kaleem
 
-## Why Kaleem is Iraq's Premier Smart Home Company
+The name "Kaleem" (كليم) is Arabic for "one who speaks." It embodies our core philosophy: to transform the relationship between people and technology from one of commands to one of conversation. We are not just building smart devices; we are giving a voice to the intelligent home, and ensuring that voice is fluent in our culture and dialect.
 
-**Kaleem** is not just another smart home company - we are Iraq's first and only dedicated smart home ecosystem provider. Our **Kaleem voice assistant** technology is designed specifically for Iraqi families, businesses, and cultural needs.
+## Our Mission
 
-### Our Vision for Smart Home Iraq
-We believe Iraq can be more than a consumer of imported tech. Our vision is to **develop local talent, create original solutions, and design hardware produced here in Iraq**.
+Our mission is to shift Iraq from being a consumer of foreign technology to a creator of its own. We are committed to:
 
-- **Future Hardware Development:** building devices with our brand, locally produced, optimized for Iraqi homes.  
-- **Jobs & Talent:** training and supporting the next generation of Iraqi AI and smart home specialists.  
-- **Scalable Technology:** everything we build must grow from single apartments to massive housing projects.  
+- **Pioneering Local Innovation:** Designing and developing the first complete smart home ecosystem that is born and bred in Iraq, for Iraq.
+- **Cultivating Local Talent:** Building a new generation of Iraqi engineers, designers, and AI specialists who will lead the technological future of our nation.
+- **Setting a New Standard for Privacy:** Championing technology that respects user privacy by design, with a local-first approach that keeps your data securely within your home.
 
-### Kaleem Company Principles
-- **Exclusive in Iraq:** we are the first company fully dedicated to Iraq's smart home ecosystem.  
-- **Human-Centered Design:** solutions built for families, not just techies.  
-- **Scalable Technology:** from one villa to entire complexes.
+## Our Vision for Iraq
 
-## Kaleem Basra - Your Local Smart Home Partner
+We envision a future where Iraqi ingenuity is a source of pride and progress. A future where our homes are not just smart, but wise. Where technology serves our families, protects our privacy, and strengthens our communities.
 
-**Kaleem Basra** serves as our primary service center for southern Iraq, bringing cutting-edge **smart home Basra** solutions to local families and businesses. Our **Kaleem voice assistant** technology is specifically optimized for the unique needs of Basra residents.  
+From a single apartment in Basra to a sprawling development in Baghdad, we are building more than connected homes. We are building the framework for a more independent, innovative, and articulate future.
 
-
-**Next:** [See our Solutions →](/solutions)
+Next: [See Our Solutions](/solutions)

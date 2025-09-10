@@ -1,195 +1,69 @@
 ---
 layout: ../layouts/MarkdownPage.astro
-title: "Kaleem Voice Assistant Features | Smart Home Iraq Basra"
-description: "Discover Kaleem voice assistant features. Smart home Iraq automation, voice control, AI monitoring for Basra families. Kaleem company technology."
+title: "Features | What A Kaleem Home Can Do"
+description: "Explore the features of a Kaleem smart home. From a voice assistant that understands Iraqi Arabic to uncompromising local-first privacy, discover how our technology adapts to you."
 ---
 
-# Kaleem Voice Assistant Features - Smart Home Iraq Technology
+# What a Kaleem Home Can Do
 
-This isn't about gadgets. It's about a **Kaleem smart house** that reacts to you, in plain language, every day. Discover the power of **Kaleem voice assistant** technology designed specifically for Iraqi families.
+A Kaleem home is different. It doesn't just execute commands; it understands intent. It learns, adapts, and communicates, creating an environment that is truly in sync with you and your family. Here is what you actually get.
 
+## A Home That Knows You
 
-## Privacy & Security  
-All processing is local inside the home. No data leaves the system unless you allow it.  
-Code is reviewed by cyber-security specialists and verified by third-party auditors.  
-For maximum privacy, you can enable **offline isolated mode**: no internet access, full control, no remote features.  
+Our system is built on a foundation of awareness. It perceives, understands, and acts with intelligence, making daily life seamless.
 
+- **Personalized AI:** Choose the name, voice, and personality of your home assistant. It speaks fluent Iraqi Arabic and learns your preferences.
 
-## AI Personality  
-Your AI has a **personality chosen by you**.  
+- **Context-Aware Control:** You don't need to be specific. It knows who is speaking, where they are, and what they mean.
 
-- Pick name, voice, gender, tone, and accent (Iraqi Arabic or Standard Arabic).  
-- You can design custom personalities, including well-known voices (when legally allowed).  
-- The chosen name is how you call the AI.  
+  **User (in living room):** "It’s too dark here." → **Kaleem:** Turns on the living room light where the user is.
 
+- **Proactive Automation:** Kaleem anticipates your needs and learns your routines to create automations that make sense for your life.
 
-## Device Control & Queries  
-The AI controls devices naturally. It knows who is speaking, where they are, and which devices are nearby.  
+  **User:** "If the tank goes under 25% start the pump." → **Kaleem:** Pump will stop automatically at 100%.
 
-#### Examples  
-**User:** "Turn on the hallway light." → ****Kaleem**** Light on.
 
-**User (in living room):** "It’s too dark here."   → ****Kaleem**** Turns on the living room light where the user is.
+[See more real-world examples](/examples#home-that-knows-you)
+## Advanced Awareness for Safety & Care
 
-**User:** "I’m hot."   → ****Kaleem**** Increases AC fan in the user’s room.
+Leveraging cutting-edge AI vision, Kaleem provides a new level of care for your loved ones. It’s not surveillance; it’s a watchful guardian.
 
-**User:** "What’s the water tank level?"   → ****Kaleem**** 60%.
+- **Family & Visitor Recognition:** The smart doorbell recognizes family members, greets them by name, and can interact with delivery drivers.
 
-**User:** "What’s my electricity use today?"   → ****Kaleem**** 12 kWh.
+  **Kaleem (to delivery driver):** "You can place the package in the delivery box." (Opens the delivery box and confirms when closed).
 
-**User:** "Lock the main door."   → ****Kaleem**** Door locked.
+- **Elderly & Child Care:** The system can detect falls, unusual inactivity, or distress, notifying family members immediately.
 
-**User:** "Turn off all lights except my bedroom."   → ****Kaleem**** All lights off, bedroom stays on.
+  **Kaleem (proactive):** "Elderly person fell in the living room. Family notified — should I also alert your emergency contact?"
 
 
-## Automations  
-The AI creates automation's from natural language. It fills in implied logic automatically.  
+[See more real-world examples](/examples#safety-and-care)
+## Uncompromising Privacy & Security
 
-#### Examples  
-**User:** "If the tank goes under 25% start the pump."   → ****Kaleem**** Pump will stop automatically at 100%.
+Your home is your sanctuary. We built our technology to keep it that way. Unlike mainstream solutions that send your data to the cloud, Kaleem processes everything locally.
 
-**User:** "Alert me if a storm is coming."   → ****Kaleem**** Weather automation created. You’ll be notified if severe weather is detected.
+- **Local-First Processing:** All voice commands and data analysis happen on a dedicated device inside your home. Nothing is shared without your explicit permission.
 
-**User:** "When motion is detected at the front door, turn on the porch light."  
-→ ****Kaleem**** Automation created.
+- **Audited & Verified:** Our systems are rigorously reviewed by cybersecurity specialists to ensure your digital safety matches your physical security.
 
-**User:** "Every day at 7 AM, play the news in the kitchen."   → ****Kaleem**** Automation created.
+- **Offline-Capable:** For ultimate peace of mind, you can run your entire system in a fully isolated mode, disconnected from the internet, without sacrificing core functionality.
+## Effortless Management
 
-## Device Management & Troubleshooting  
-The AI guides you step by step when adding, removing, or fixing devices.  
+A powerful system should not be complicated. We've designed Kaleem to be as easy to manage as it is to use.
 
-#### Examples  
-**User:** "Help me add this new lamp to the system."   → ****Kaleem**** What’s the brand and model? I’ll guide you through setup.
+- **Natural Language Setup:** Create complex automations with simple sentences.
 
-**User:** "I moved the temperature sensor from the living room to the bedroom."  
-→ ****Kaleem**** Location updated. Do you want me to update the automation's linked to it?
+  **User:** "When motion is detected at the front door, turn on the porch light." → **Kaleem:** Automation created.
 
-**User:** "The AC isn’t responding."  
-→ ****Kaleem**** Running a quick check… connection issue found. Restarting integration now.
+- **Guided Troubleshooting:** If a device isn't responding, Kaleem can diagnose the issue and guide you through the fix.
 
+  **User:** "The AC isn’t responding." → **Kaleem:** Running a quick check… connection issue found. Restarting integration now.
 
-## AI Vision & Voice Detections  
-The AI vision system continuously detects and understands people, actions, and events.  
-This data is passed into the home system so the AI can **chat, make decisions, and create automation's**.  
+- **Granular Permissions:** You decide who has control. Parents have full access, while children and guests have limited permissions.
 
-- **Faces / Voice Recognition:** Identifies people by face or voice.  
-- **Action Detection:** Walking, sitting, lying, sleeping, playing, eating, etc.  
-- **Zone Monitoring:** Detects people or objects entering and leaving areas.  
+  **Child:** "Open the garage door." (time is 11 PM) → **Kaleem:** Sorry, garage cannot be opened at night without a parent.
 
-#### Use Cases  
-- **Smart doorbell:** Recognizes family, guests, delivery drivers, or unknown visitors. Welcomes family, assists guests, opens delivery box for couriers, and informs household members when someone asks for them.  
-- **Daily detection:** “Ali in his room studying, Ahmed in the garden, Sara watching TV.”  
-- **Special needs:** Detects if an ill person struggles to sleep, sleepwalks, or gets up at night. Wakes them gently or notifies family.  
-- **Elderly care:** Detects falls, long inactivity, or distress → notifies family first, then offers to contact an emergency contact if set.  
-- **Child monitoring:** Alerts if a child enters restricted zones (garage, storage), or goes outside alone.  
-- **Emergency detection:** Detects if someone stops breathing or moving, or if crying/screaming is heard.  
-- **Health & routine:** Reminds about medication or feeding times, using AI vision and sensors together (e.g., temperature, motion).  
 
-#### Examples  
-**User:** "This is my friend Ahmed Alaa."   → ****Kaleem**** Face and voice saved as Ahmed Alaa.
+[See more real-world examples](/examples#effortless-management)
 
-****Kaleem (proactive):**** Elderly person fell in the living room. Family notified — should I also alert your emergency contact?
-
-****Kaleem (proactive):**** Child entered the garden without an adult. Sending alert.
-
-****Kaleem (proactive):**** Detected baby crying for more than minute. notifying the mother.
-
-
-### Smart Doorbell  
-The smart doorbell uses AI vision and voice detection to recognize who is at the door and respond appropriately.  
-It welcomes family members, greets guests, and politely asks unknown visitors what they want.  
-For delivery drivers, the AI can open the delivery box so items can be dropped off safely.  
-If someone asks for a family member, the AI tries to reach them. If they are not available, it leaves a message and informs them later.  
-
-#### Examples  
-****Kaleem (to known family member at the door):**** Welcome home, Sara. Unlocking the door.
-
-****Kaleem (to delivery driver):**** You can place the package in the delivery box.
-(Opens the delivery box and confirms when closed.)
-
-****Kaleem (to unknown visitor):**** Hello, who are you here to see?
-
-**Visitor:** "I need to speak with Ahmed."   → ****Kaleem**** Trying to reach Ahmed...
-(If Ahmed is busy:) ****Ahmed is not available right now. I’ll notify him you came by.****
-
-****Kaleem (to guest):**** Welcome. Please wait, I’m notifying the family that you’re here.
-
-
-## User Permissions & Access Control  
-Different roles for safety:  
-
-- **Parents:** Full control  
-- **Children:** Limited access  
-- **Guests:** Temporary permissions  
-
-#### Examples  
-**Child:** "Open the garage door." (time is 11 PM)   → ****Kaleem**** Sorry, garage cannot be opened at night without a parent.
-
-**Child (by mistake):** "Delete this automation."   → ****Kaleem**** Not allowed. Only parents can delete automations.
-
-**Guest:** "Turn on AC in the main room."   → ****Kaleem**** AC on.
-
-
-## Memory (Household + Personal)  
-The AI remembers household events and personal preferences.  
-
-#### Examples  
-**User (in bed):** "Play music."   → ****Kaleem**** Starts last night’s relaxing playlist before sleep.
-
-**User:** "Would you please set the AC for me."   → ****Kaleem**** Adjusts to your preferred 23°C setting.
-
-
-## Messenger / Relay Feature  
-The AI passes messages between family members.  
-
-#### Example Dialogue  
-**User 1:** "Tell Ahmed I arrived."   → ****Kaleem**** Saved. Will notify him when he comes home.
-(Later)  
-****Kaleem → Ahmed:**** Your father said he arrived earlier.
-
-**Mother:** "Where is Ali"   → ****Kaleem**** Ali is in his room studying. Do you want me to call him for you?
-**Mother:** "Not now, but when he is finished tell him I put the dinner in the fridge."   → ****Kaleem**** Okay. Reminder set for Ali when he finishes studying.
-## Feeling Like a Family Member  
-The AI learns and remembers your style of living.  
-
-#### Examples  
-**User:** "Turn off the lights."   → ****Kaleem**** Keeps your bedside lamp dimmed, as you prefer before sleep.
-
-**User:** "Cool the room."   → ****Kaleem**** Sets AC to your favorite setting: 23°C with gentle airflow.
-
-
-## Safety & Care  
-AI vision and sensors provide **continuous care and monitoring** for safety, children, and special needs.  
-
-- Detects if an elderly person falls, needs help, or shows unusual inactivity.  
-- Ensures children avoid unsafe areas and notifies if they go outside alone.  
-- Detects crying, screaming, or unusual breathing.  
-- Fire alarms → doors unlock, family notified.  
-- Emergency contacts are **chosen by you** (doctor, relative, or neighbor).  
-- Family members are **always notified first**, then the AI offers to contact the emergency contact if set.  
-
-#### Examples  
-**User:** "Notify me if my child goes into the garden alone."   → ****Kaleem**** Alert created.
-
-**User:** "Block children from opening the storage room."   → ****Kaleem**** Storage locked for children.
-
-****Kaleem (proactive):**** Child has been near the pool for 5 minutes. Family notified.
-
-****Kaleem (proactive):**** Fire detected in kitchen. Doors unlocked, family notified.
-
-****Kaleem (proactive):**** Elderly person fell in the living room. Family notified — should I also alert your emergency contact?
-
-
-## Simplified UI & History  
-The interface makes it easy to manage personalities, permissions, and the vision system.  
-A **history and rollback option** lets you undo mistakes instantly.  
-
-#### Examples  
-**User:** "Undo the change I just made."   → ****Kaleem**** Restored system to the last safe state.
-
-**User:** "I deleted the living room automation by mistake."   → ****Kaleem**** Automation restored from history.
-
-(Voice/personality changes are only available in the app UI, not by voice command. Rollback is voice-enabled.)
-
-
-**Next:** [See our Solutions →](/solutions) · **Ready?** [Contact us →](/contact)
+Next: [See Our Solutions](/solutions) · Ready? [Contact Us](/contact)

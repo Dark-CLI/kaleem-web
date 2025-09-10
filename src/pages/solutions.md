@@ -1,28 +1,37 @@
 ---
 layout: ../layouts/MarkdownPage.astro
-title: "Kaleem Smart Home Solutions | Voice Assistant Iraq Basra"
-description: "Kaleem company provides complete smart home solutions in Iraq. Smart house automation for Basra, Baghdad. Voice assistant technology."
+title: "Our Solutions | Intelligent Environments for Every Scale"
+description: "Kaleem provides bespoke smart home and office solutions for new builds and existing properties in Iraq. Discover our services for homes, residential developments, and businesses."
 ---
-# Kaleem Smart Home Solutions - Voice Assistant Technology
 
-**Kaleem** doesn't just install devices. We design **complete smart living systems** that adapt to both old and new properties.  
-Every **Kaleem smart home** solution is built around reliability, privacy, and the specific needs of Iraq.
+# Solutions for Every Environment
 
-## Kaleem Company - Who We Serve
-**Kaleem solutions** are designed to fit **different scales and clients** across Iraq:
+Whether you are upgrading a family home, developing a new residential complex, or creating a more intelligent workspace, Kaleem provides a tailored solution. We design and implement integrated systems that deliver comfort, efficiency, and security at any scale.
+## For Your Home
 
-- **Single homes & villas**: tailored **Kaleem smart house** automation for comfort, energy efficiency, and safety for families.  
-- **Residential complexes**: scalable infrastructure for hundreds of units, centralized control, and uniform standards that reduce maintenance.  
-- **Companies & offices**: secure, energy-aware systems that improve workplace comfort, streamline access control, and cut costs.  
+Transform your house into a home that understands you. Our residential solutions are designed for the modern Iraqi family, providing a seamless blend of comfort, security, and peace of mind.
 
-### Kaleem Retrofit Services
-- Upgrade older homes and offices without major renovation using **Kaleem voice assistant** technology.  
-- Integrate smart devices, sensors, and automation into existing wiring.  
-- Enhance comfort, security, and energy efficiency in current properties with **smart home Basra** solutions.  
+- **Personalized Comfort:** Automate your lighting, climate, and entertainment to match your daily rhythms.
+- **Family Security:** Integrate smart locks, cameras, and sensors that keep you aware and in control, whether you are home or away.
+- **Energy Efficiency:** Let your home intelligently manage power consumption, reducing waste and lowering costs without sacrificing comfort.
+## For Your Residential Development
 
-### Kaleem New Installations
-- Full smart infrastructure for new builds and large housing projects by **Kaleem company**.  
-- Future-ready homes and complexes with structured wiring, centralized hubs, and scalable architecture.  
-- Enterprise-ready solutions for companies, offices, and commercial spaces across **smart home Iraq**.  
+Set a new standard for modern living in your next project. We partner with developers to build future-ready residential complexes, providing a scalable infrastructure that adds significant value and appeal to your properties.
 
-**Next:** [Learn more about us →](/about) · [Talk to us →](/contact)
+- **Scalable by Design:** Our architecture is built to grow, from a handful of villas to hundreds of apartments, all managed under a unified, reliable system.
+- **Centralized Management:** Simplify maintenance and support with a centralized control system that ensures consistency and reliability across all units.
+- **A Key Selling Point:** Offer a truly intelligent living experience that differentiates your development in a competitive market.
+## For Your Business
+
+Create a workspace that is more secure, efficient, and productive. Our commercial solutions are designed for offices, clinics, and other professional environments where reliability and streamlined operations are paramount.
+
+- **Enhanced Security:** Implement intelligent access control, AI-powered monitoring, and automated alerts to protect your assets and personnel.
+- **Operational Efficiency:** Automate climate and lighting to create a comfortable environment for your team while significantly reducing energy overhead.
+- **Simplified Management:** Control your entire workspace from a single interface, giving you effortless command over your environment.
+### Our Approach: New Builds & Retrofits
+
+**New Construction:** For new projects, we design the smart infrastructure from the ground up, integrating structured wiring and centralized hubs to create a robust, future-proof system.
+
+**Retrofit Services:** For existing properties, we specialize in seamlessly upgrading your space with minimal disruption, integrating smart technology into your current infrastructure.
+
+Next: [Learn About Us](/about) · Ready? [Contact Us](/contact)

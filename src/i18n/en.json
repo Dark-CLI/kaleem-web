@@ -4,5 +4,7 @@
   "nav.features": "Features",
   "nav.about": "About",
   "nav.contact": "Contact",
-  "nav.examples": "Examples"
+  "nav.examples": "Examples",
+  "footer.copyright": "Kaleem Smart Home Solutions. All rights reserved.",
+  "footer.contactUs": "Contact Us"
 }

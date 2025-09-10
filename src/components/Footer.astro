@@ -1,13 +1,19 @@
 ---
 const today = new Date();
 import { getRelativeLocaleUrl } from 'astro:i18n';
+
+// Import translation dictionaries
+import en from '../i18n/en.json';
+import ar from '../i18n/ar.json';
+
 const locale = Astro.currentLocale;
+const t = locale === 'ar' ? ar : en;
 ---
 
 <footer>
 	<div class="contact">
-	&copy; {today.getFullYear()} Kaleem Smart Home Solutions. All rights reserved.
-	<p><a href={getRelativeLocaleUrl(locale, '/contact')}>Contact Us</a></p>
+	&copy; {today.getFullYear()} {t['footer.copyright']}
+	<p><a href={getRelativeLocaleUrl(locale, '/contact')}>{t['footer.contactUs']}</a></p>
 	</div>
 </footer>
 <style>
