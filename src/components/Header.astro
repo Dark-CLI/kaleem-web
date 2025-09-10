@@ -22,9 +22,13 @@ const navLinks = [
   { href: '/contact', text: t['nav.contact'] },
 ];
 
-// Reverse the order if the locale is Arabic
+// Create separate arrays for desktop and mobile
+const desktopNavLinks = [...navLinks];
+const mobileNavLinks = [...navLinks];
+
+// Only reverse the desktop navigation for Arabic (not mobile)
 if (locale === 'ar') {
-  navLinks.reverse();
+  desktopNavLinks.reverse();
 }
 
 ---
@@ -44,7 +48,7 @@ if (locale === 'ar') {
 		</button>
 		<div class="desktop-nav-links">
 			<div class="internal-links">
-				{navLinks.map(link => {
+				{desktopNavLinks.map(link => {
 					const linkHref = getRelativeLocaleUrl(locale, link.href);
 					const isActive = currentPath === linkHref || (currentPath === '/' && linkHref === getRelativeLocaleUrl(locale, '/'));
 					return (
@@ -64,7 +68,7 @@ if (locale === 'ar') {
     <button id="close-menu" class="close-button">&times;</button>
     <div class="mobile-nav-links">
         <ul>
-            {navLinks.map(link => {
+            {mobileNavLinks.map(link => {
                 const linkHref = getRelativeLocaleUrl(locale, link.href);
                 const isActive = currentPath === linkHref || (currentPath === '/' && linkHref === getRelativeLocaleUrl(locale, '/'));
                 return (
