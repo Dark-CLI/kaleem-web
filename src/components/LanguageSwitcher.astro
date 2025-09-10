@@ -1,36 +1,37 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n';
-
 const currentLocale = Astro.currentLocale;
 const otherLocale = currentLocale === 'en' ? 'ar' : 'en';
-const defaultLocale = 'en'; // As configured in astro.config.mjs
+const langLabel = currentLocale === 'en' ? 'العربية' : 'English';
 
-let canonicalPath = Astro.url.pathname;
-const localePrefix = `/${currentLocale}`;
-
-// If the current path starts with the locale prefix, remove it to get the base path
-if (currentLocale !== defaultLocale && canonicalPath.startsWith(localePrefix)) {
-  canonicalPath = canonicalPath.substring(localePrefix.length) || '/';
-}
-
-const otherLocaleUrl = getRelativeLocaleUrl(otherLocale, canonicalPath);
+// Fix URL logic to avoid /en/ prefix for English
+const getUrl = (locale) => {
+  let path = Astro.url.pathname;
+  // Remove existing locale prefix if present
+  path = path.replace(/^\/(en|ar)/, '');
+  // Add locale prefix only for Arabic, not for English
+  return locale === 'ar' ? `/${locale}${path}` : path;
+};
 ---
 
-<a href={otherLocaleUrl} class="language-switcher">
-  {otherLocale.toUpperCase()}
-</a>
-
+<a class="lang-switch-btn" href={getUrl(otherLocale)} aria-label="Switch language">{langLabel}</a>
 <style>
-  .language-switcher {
-    font-size: 1.1em;
-    color: var(--accent);
-    text-decoration: none;
-    padding: 0;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  }
-  .language-switcher:hover {
-    color: var(--accent-dark);
-    border-bottom-color: var(--accent-dark);
-  }
+.lang-switch-btn {
+  font-size: 1.05em;
+  background: none;
+  border: none;
+  color: var(--header-text);
+  padding: 0.3em 0.6em;
+  border-radius: 0.4em;
+  cursor: pointer;
+  margin: 0;
+  transition: background 0.15s, color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  height: 2.2em;
+  text-decoration: none;
+}
+.lang-switch-btn:hover, .lang-switch-btn:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-dark);
+}
 </style>

@@ -1,18 +1,13 @@
 ---
-import HeaderLink from './HeaderLink.astro';
 import ThemeToggleButton from './ThemeToggleButton.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import { getRelativeLocaleUrl } from 'astro:i18n';
-
-// Import translation dictionaries
 import en from '../i18n/en.json';
 import ar from '../i18n/ar.json';
 
 const locale = Astro.currentLocale;
 const t = locale === 'ar' ? ar : en;
-
 const currentPath = Astro.url.pathname;
-
 const navLinks = [
   { href: '/', text: t['nav.home'] },
   { href: '/solutions', text: t['nav.solutions'] },
@@ -21,429 +16,87 @@ const navLinks = [
   { href: '/about', text: t['nav.about'] },
   { href: '/contact', text: t['nav.contact'] },
 ];
-
-// Create separate arrays for desktop and mobile
-const desktopNavLinks = [...navLinks];
-const mobileNavLinks = [...navLinks];
-
-// Only reverse the desktop navigation for Arabic (not mobile)
-if (locale === 'ar') {
-  desktopNavLinks.reverse();
-}
-
 ---
 
-<header>
-	<nav>
+<header class="main-header">
+  <div class="header-content">
+    <div class="header-left">
 		<a href={getRelativeLocaleUrl(locale, '/')} class="logo-link">
-			<img src="/images/kaleem-logo/vector/default-monochrome-black.svg" alt="Kaleem Logo" class="light-logo" />
-			<img src="/images/kaleem-logo/vector/default-monochrome-white.svg" alt="Kaleem Logo" class="dark-logo" />
-		</a>
-		<button class="hamburger-menu" id="menu-toggle" aria-label="Toggle navigation">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-				<line x1="3" y1="12" x2="21" y2="12"></line>
-				<line x1="3" y1="6" x2="21" y2="6"></line>
-				<line x1="3" y1="18" x2="21" y2="18"></line>
-			</svg>
-		</button>
-		<div class="desktop-nav-links">
-			<div class="internal-links">
-				{desktopNavLinks.map(link => {
+        <img src="/images/kaleem-logo/vector/default-monochrome-black.svg" alt="Kaleem Logo" class="logo-img light" />
+        <img src="/images/kaleem-logo/vector/default-monochrome-white.svg" alt="Kaleem Logo" class="logo-img dark" />
+      </a>
+    </div>
+    <nav class="header-center">
+      {navLinks.map(link => {
 					const linkHref = getRelativeLocaleUrl(locale, link.href);
 					const isActive = currentPath === linkHref || (currentPath === '/' && linkHref === getRelativeLocaleUrl(locale, '/'));
 					return (
-						<HeaderLink href={linkHref} isActive={isActive}>
-							{link.text}
-						</HeaderLink>
+          <a
+            href={linkHref}
+            class={`nav-link${isActive ? ' active' : ''}`}
+          >{link.text}</a>
 					);
 				})}
+    </nav>
+    <div class="header-right">
+      <div class="header-utilities">
+        <ThemeToggleButton />
+        <LanguageSwitcher />
+      </div>
+      <button class="burger-menu" id="menu-toggle" aria-label="Open Menu">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
 			</div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-utilities">
 			<ThemeToggleButton />
 			<LanguageSwitcher />
 		</div>
-	</nav>
-</header>
-
-<div id="off-canvas-menu" class="off-canvas-menu">
-    <button id="close-menu" class="close-button">&times;</button>
-    <div class="mobile-nav-links">
-        <ul>
-            {mobileNavLinks.map(link => {
+      <nav class="mobile-links">
+        {navLinks.map(link => {
                 const linkHref = getRelativeLocaleUrl(locale, link.href);
                 const isActive = currentPath === linkHref || (currentPath === '/' && linkHref === getRelativeLocaleUrl(locale, '/'));
                 return (
-                    <li>
-                        <HeaderLink href={linkHref} isActive={isActive}>
-                            {link.text}
-                        </HeaderLink>
-                    </li>
+            <a
+              href={linkHref}
+              class={`mobile-nav-link${isActive ? ' active' : ''}`}
+            >{link.text}</a>
                 );
             })}
-        </ul>
-    </div>
-    <div class="mobile-utility-buttons">
-        <ThemeToggleButton id="mobile-theme-toggle" />
-        <LanguageSwitcher />
+      </nav>
     </div>
 </div>
-
-<div id="menu-overlay" class="menu-overlay"></div>
-
-<style>
-/* Base styles (mobile-first) */
-body {
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll when menu is off-screen */
-}
-
-header {
-    margin: 0;
-    padding: 0.8em 1.5em; /* Increased padding for a more modern feel */
-    background: var(--header-bg);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
-    border-bottom: none; /* Remove border for cleaner look */
-    position: relative;
-    min-height: 4.5rem;
-    display: flex;
-    align-items: center;
-}
-
-html:not([data-theme='dark']) header {
-    background: rgba(242, 191, 164, 0.8);
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    direction: ltr;
-}
-
-.logo-link img {
-    height: 2.5rem; /* Slightly larger logo */
-    width: auto;
-    display: block;
-    border-radius: 0; /* Remove circular clip effect */
-}
-
-.hamburger-menu {
-    display: block; /* Visible on mobile */
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--header-text);
-    padding: 0.5em;
-    transition: transform 0.3s ease; /* Smooth transition for potential animation */
-}
-
-.hamburger-menu:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
-    border-radius: 5px;
-}
-
-.hamburger-menu svg {
-    width: 1.8rem; /* Slightly larger icon */
-    height: 1.8rem;
-}
-
-.desktop-nav-links {
-    display: none; /* Hidden on mobile */
-}
-
-/* Off-canvas menu styles */
-.off-canvas-menu {
-    position: fixed;
-    top: 0;
-    right: -80%; /* Initially hidden off-screen to the right */
-    width: 80%;
-    height: 100vh; /* Full viewport height */
-    background: linear-gradient(to bottom, rgba(245, 231, 222, 0.8), rgba(242, 191, 164, 0.8));
-    color: var(--header-text);
-    padding: 20px; /* Base padding */
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1); /* Softer shadow */
-    transition: right 0.3s ease; /* Smooth slide-in/out */
-    z-index: 1000;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute content vertically */
-    align-items: center;
-    backdrop-filter: blur(10px);
-}
-
-html[data-theme='dark'] .off-canvas-menu {
-    background: linear-gradient(to bottom, rgba(30, 34, 30, 0.8), rgba(21, 24, 21, 0.8));
-}
-
-.off-canvas-menu.open {
-    right: 0; /* Slide into view */
-}
-
-.mobile-nav-links {
-    flex-grow: 1; /* Allows it to take available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center links vertically */
-    width: 100%;
-}
-
-.mobile-nav-links ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.mobile-nav-links li {
-    margin-bottom: 20px; /* More spacing between links */
-}
-
-.mobile-nav-links a {
-    color: var(--header-text);
-    text-decoration: none;
-    font-size: 1.5em; /* Larger font size for mobile links */
-    font-weight: 600; /* Slightly bolder */
-    display: block;
-    padding: 10px 0;
-    transition: color 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
-}
-
-.mobile-nav-links a:hover {
-    color: var(--accent); /* Accent color on hover */
-    background-color: rgba(var(--gray), 0.1); /* Subtle background on hover */
-}
-
-.mobile-nav-links a.active {
-    color: var(--accent);
-    font-weight: bold;
-}
-
-.mobile-utility-buttons {
-    display: flex;
-    flex-direction: row; /* Changed to row */
-    gap: 15px; /* Space between buttons */
-    width: 100%;
-    padding-top: 20px; /* Space from navigation links */
-    border-top: 1px solid rgba(var(--gray), 0.2); /* Separator line */
-    justify-content: center; /* Center buttons horizontally */
-    direction: ltr;
-}
-
-.mobile-utility-buttons .theme-toggle-button,
-.mobile-utility-buttons .language-switcher {
-    width: 100%;
-    padding: 15px 0; /* Larger touch area */
-    font-size: 1.5em; /* Larger font size for mobile */
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.2s ease; /* Smooth transition */
-    background-color: var(--accent);
-    color: var(--header-text); /* Use header text color instead of white */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50px; /* Ensure minimum touch target */
-}
-
-.mobile-utility-buttons .theme-toggle-button:hover,
-.mobile-utility-buttons .language-switcher:hover {
-    background-color: rgba(var(--gray), 0.15); /* Slightly more pronounced hover */
-}
-
-.close-button {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: none;
-    border: none;
-    color: var(--header-text);
-    font-size: 2.5em; /* Larger close icon */
-    cursor: pointer;
-    padding: 5px;
-    z-index: 1001; /* Ensure it's above other content */
-}
-
-/* Overlay styles */
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.menu-overlay.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Body scroll lock when menu is open */
-body.menu-open {
-    overflow: hidden;
-}
-
-/* Desktop styles */
-@media (min-width: 769px) {
-    header {
-        padding: 0.8em 2em; /* Consistent padding with mobile */
-    }
-
-    .hamburger-menu {
-        display: none; /* Hide hamburger on desktop */
-    }
-
-    .desktop-nav-links {
-        display: flex; /* Show desktop links */
-        align-items: center;
-        gap: 1em; /* More space between desktop links */
-    }
-
-    .desktop-nav-links .internal-links {
-        display: flex;
-        gap: 1em;
-    }
-
-    [dir="rtl"] .internal-links {
-        flex-direction: row-reverse;
-    }
-
-    .desktop-nav-links .internal-links a {
-        padding: 1.75em 1em;
-        color: var(--header-text);
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-        transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-        font-size: 1.1em;
-    }
-
-    .desktop-nav-links .internal-links a:hover {
-        color: var(--accent-dark);
-        border-bottom-color: var(--accent-dark);
-    }
-
-    .desktop-nav-links .internal-links a.active {
-        color: var(--accent);
-        border-bottom-color: var(--accent);
-        font-weight: bold;
-    }
-
-    .mobile-nav-links a.active {
-        color: var(--accent);
-        font-weight: bold;
-    }
-
-    .off-canvas-menu {
-        display: none; /* Hide off-canvas menu on desktop */
-    }
-
-    .menu-overlay {
-        display: none; /* Hide overlay on desktop */
-    }
-
-    body.menu-open {
-        overflow: auto; /* Restore body overflow on desktop */
-    }
-}
-
-/* Styles for links within the main content area */
-main a {
-    color: var(--accent); /* Use accent color for links */
-    text-decoration: underline; /* Always show underline */
-    text-decoration-color: rgba(var(--accent), 0.5); /* Lighter underline color */
-    text-underline-offset: 0.2em; /* Space between text and underline */
-    transition: color 0.2s ease, text-decoration-color 0.2s ease, transform 0.1s ease;
-    cursor: pointer; /* Explicitly show it's clickable */
-}
-
-main a:hover,
-main a:focus {
-    color: var(--accent-dark); /* Darken text on hover/focus */
-    text-decoration-color: var(--accent); /* Make underline solid on hover */
-    transform: translateY(-1px); /* Slight lift effect */
-}
-
-main a:active {
-    color: var(--accent); /* Keep accent color on tap */
-    transform: translateY(1px); /* Slight press effect */
-}
-
-.logo-link .light-logo {
-    display: block;
-}
-
-.logo-link .dark-logo {
-    display: none;
-}
-
-html[data-theme='dark'] .logo-link .light-logo {
-    display: none;
-}
-
-html[data-theme='dark'] .logo-link .dark-logo {
-    display: block;
-}
-
-</style>
-
-<script is:inline>
-  console.log('Script loaded and running.');
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded fired.');
+  <div class="menu-overlay" id="menu-overlay"></div>
+  <script type="module" is:inline>
+    // Simple burger menu toggle with slide animation
     const menuToggle = document.getElementById('menu-toggle');
-    const offCanvasMenu = document.getElementById('off-canvas-menu');
-    const closeMenuButton = document.getElementById('close-menu');
+    const mobileNav = document.getElementById('mobile-nav');
     const menuOverlay = document.getElementById('menu-overlay');
-    const body = document.body;
-
-    console.log('Elements found:', {
-      menuToggle: !!menuToggle,
-      offCanvasMenu: !!offCanvasMenu,
-      closeMenuButton: !!closeMenuButton,
-      menuOverlay: !!menuOverlay,
-      body: !!body
-    });
 
     function openMenu() {
-        console.log('openMenu called.');
-        offCanvasMenu.classList.add('open');
-        menuOverlay.classList.add('visible');
-        body.classList.add('menu-open');
-        
-        // Debug: Check mobile theme toggle button and ensure it's updated
-        setTimeout(() => {
-            const mobileThemeToggle = document.querySelector('#mobile-theme-toggle');
-            console.log('Mobile theme toggle found:', !!mobileThemeToggle);
-            if (mobileThemeToggle) {
-                console.log('Mobile theme toggle content:', mobileThemeToggle.innerHTML);
-                console.log('Mobile theme toggle styles:', window.getComputedStyle(mobileThemeToggle));
-                
-                // Ensure mobile theme toggle is updated with current theme
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                mobileThemeToggle.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
-                console.log('Updated mobile theme toggle to:', mobileThemeToggle.innerHTML);
-            }
-        }, 100);
+      mobileNav?.classList.add('open');
+      menuOverlay?.classList.add('visible');
+      document.body.classList.add('menu-open');
     }
 
     function closeMenu() {
-        console.log('closeMenu called.');
-        offCanvasMenu.classList.remove('open');
-        menuOverlay.classList.remove('visible');
-        body.classList.remove('menu-open');
+      mobileNav?.classList.remove('open');
+      menuOverlay?.classList.remove('visible');
+      document.body.classList.remove('menu-open');
     }
-
-    if (menuToggle && offCanvasMenu && closeMenuButton && menuOverlay && body) {
-        console.log('Attaching event listeners.');
-        menuToggle.addEventListener('click', openMenu);
-        closeMenuButton.addEventListener('click', closeMenu);
-        menuOverlay.addEventListener('click', closeMenu);
-    } else {
-        console.error('One or more elements not found, cannot attach event listeners.');
-    }
+    
+    menuToggle?.addEventListener('click', openMenu);
+    menuOverlay?.addEventListener('click', closeMenu);
+    
+    // Close menu on nav link click
+    mobileNav?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
   });
 </script>
+</header>
