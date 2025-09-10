@@ -43,10 +43,10 @@ html, body { /* Added */
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Tajawal", sans-serif;
 }
 
 body {
-  font-family: "Tajawal", sans-serif;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, #F5E7DE, #F2BFA4);
