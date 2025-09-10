@@ -16,6 +16,22 @@ if (currentLocale !== defaultLocale && canonicalPath.startsWith(localePrefix)) {
 const otherLocaleUrl = getRelativeLocaleUrl(otherLocale, canonicalPath);
 ---
 
-<a href={otherLocaleUrl} class="language-switcher header-link">
+<a href={otherLocaleUrl} class="language-switcher">
   {otherLocale.toUpperCase()}
 </a>
+
+<style>
+  .language-switcher {
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 1.75em 1em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .language-switcher:hover {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent-dark);
+  }
+</style>
