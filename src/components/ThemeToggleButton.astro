@@ -1,8 +1,13 @@
 ---
-// No props needed for this component
+// Props for this component
+export interface Props {
+  id?: string;
+}
+
+const { id = 'theme-toggle-text' } = Astro.props;
 ---
 <div class="theme-toggle">
-  <span id="theme-toggle-text" class="theme-toggle-button" style="cursor: pointer;">
+  <span id={id} class="theme-toggle-button" style="cursor: pointer;">
     <!-- Initial icon will be set by the script -->
   </span>
 </div>
@@ -14,19 +19,21 @@
   }
 
   .theme-toggle-button {
-    /* Removed button-specific styles */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent); /* Use accent color */
-    /* Ensure text icon is visible and clickable */
-    /* font-size: 1.2em; /* Removed to inherit from header */
+    color: var(--header-text);
+    font-size: 1.2em;
     line-height: 1; /* Prevent extra spacing */
+    padding: 0.5em;
+    border-radius: 4px;
+    transition: color 0.2s ease;
   }
 
   .theme-toggle-button:hover {
     color: var(--accent-dark); /* Change to darker accent on hover */
+    background-color: rgba(var(--gray), 0.1);
   }
 
   .theme-toggle-button i { /* Target the Font Awesome icon directly */
@@ -38,41 +45,80 @@
 </style>
 
 <script is:inline>
-  const getTheme = () => {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-      return localStorage.getItem('theme');
-    }
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-    return 'light';
-  };
+  // Only declare functions if they don't already exist
+  if (typeof window.getTheme === 'undefined') {
+    window.getTheme = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+      return 'light';
+    };
+  }
 
-  const setTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem('theme', theme);
-    }
-    // Update the text content of the span
-    const themeToggleText = document.getElementById('theme-toggle-text');
-    if (themeToggleText) {
-      themeToggleText.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    }
-  };
-
-  // Set theme on initial load
-  const initialTheme = getTheme();
-  setTheme(initialTheme);
-
-  // Add event listener to the span
-  document.addEventListener('DOMContentLoaded', () => {
-    const themeToggleText = document.getElementById('theme-toggle-text');
-    if (themeToggleText) {
-      themeToggleText.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
+  if (typeof window.setTheme === 'undefined') {
+    window.setTheme = (theme) => {
+      console.log('=== setTheme called with:', theme, '===');
+      console.log('Document element before:', document.documentElement.getAttribute('data-theme'));
+      
+      document.documentElement.setAttribute('data-theme', theme);
+      console.log('Document element after:', document.documentElement.getAttribute('data-theme'));
+      
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('theme', theme);
+        console.log('Saved to localStorage:', theme);
+      }
+      
+      // Update ALL theme toggle buttons (both desktop and mobile)
+      const themeToggleButtons = document.querySelectorAll('.theme-toggle-button');
+      console.log('Found theme toggle buttons to update:', themeToggleButtons.length);
+      themeToggleButtons.forEach((button, index) => {
+        const newContent = theme === 'dark' ? '☀️' : '🌙';
+        button.innerHTML = newContent;
+        console.log(`Updated button ${index + 1} to:`, newContent);
       });
-    }
+      
+      console.log('=== setTheme completed ===');
+    };
+  }
+
+  // Add event listener to all theme toggle buttons
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('ThemeToggleButton: DOMContentLoaded fired');
+    const themeToggleButtons = document.querySelectorAll('.theme-toggle-button');
+    console.log('ThemeToggleButton: Found buttons:', themeToggleButtons.length);
+    
+    // Set theme on initial load after DOM is ready
+    const initialTheme = window.getTheme();
+    window.setTheme(initialTheme);
+    
+    // Remove any existing event listeners to prevent duplication
+    themeToggleButtons.forEach((button, index) => {
+      // Clone the button to remove all event listeners
+      const newButton = button.cloneNode(true);
+      button.parentNode.replaceChild(newButton, button);
+      
+      console.log(`ThemeToggleButton: Adding click listener to button ${index + 1}`);
+      newButton.addEventListener('click', (e) => {
+        console.log(`ThemeToggleButton: Button ${index + 1} clicked!`, e);
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        console.log('Current theme before switch:', currentTheme);
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        console.log('ThemeToggleButton: Switching from', currentTheme, 'to', newTheme);
+        
+        // Verify the theme actually changed
+        window.setTheme(newTheme);
+        setTimeout(() => {
+          const actualTheme = document.documentElement.getAttribute('data-theme');
+          console.log('Theme after switch:', actualTheme);
+          console.log('Theme change successful:', actualTheme === newTheme);
+        }, 100);
+      });
+    });
   });
 </script>

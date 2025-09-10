@@ -78,7 +78,7 @@ if (locale === 'ar') {
         </ul>
     </div>
     <div class="mobile-utility-buttons">
-        <ThemeToggleButton />
+        <ThemeToggleButton id="mobile-theme-toggle" />
         <LanguageSwitcher />
     </div>
 </div>
@@ -231,11 +231,15 @@ html[data-theme='dark'] .off-canvas-menu {
 .mobile-utility-buttons .language-switcher {
     width: 100%;
     padding: 15px 0; /* Larger touch area */
-    font-size: 1.2em;
+    font-size: 1.5em; /* Larger font size for mobile */
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.2s ease; /* Smooth transition */
     background-color: var(--accent);
-    color: white;
+    color: var(--header-text); /* Use header text color instead of white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px; /* Ensure minimum touch target */
 }
 
 .mobile-utility-buttons .theme-toggle-button:hover,
@@ -406,6 +410,21 @@ html[data-theme='dark'] .logo-link .dark-logo {
         offCanvasMenu.classList.add('open');
         menuOverlay.classList.add('visible');
         body.classList.add('menu-open');
+        
+        // Debug: Check mobile theme toggle button and ensure it's updated
+        setTimeout(() => {
+            const mobileThemeToggle = document.querySelector('#mobile-theme-toggle');
+            console.log('Mobile theme toggle found:', !!mobileThemeToggle);
+            if (mobileThemeToggle) {
+                console.log('Mobile theme toggle content:', mobileThemeToggle.innerHTML);
+                console.log('Mobile theme toggle styles:', window.getComputedStyle(mobileThemeToggle));
+                
+                // Ensure mobile theme toggle is updated with current theme
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                mobileThemeToggle.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
+                console.log('Updated mobile theme toggle to:', mobileThemeToggle.innerHTML);
+            }
+        }, 100);
     }
 
     function closeMenu() {
