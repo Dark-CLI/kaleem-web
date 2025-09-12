@@ -421,3 +421,9 @@ body.menu-open {
     font-size: 1.375rem; /* 22px */
   }
 }
+
+@media (min-width: 901px) {
+  html[lang="ar"] .header-center {
+    flex-direction: row-reverse;
+  }
+}
