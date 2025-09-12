@@ -1,40 +1,25 @@
-
 ---
-layout: ../../layouts/MarkdownPage.astro
-title: "Kaleem - Smart Home Solutions"
-description: "Kaleem provides smart home solutions for homes and businesses in Iraq. We transform ordinary spaces into intelligent, responsive environments."
+layout: ../layouts/MarkdownPage.astro
+title: "Kaleem | The Articulate Home | Smart Home Solutions in Iraq"
+description: "Experience the future with Kaleem, Iraq's premier smart home innovator. We design intelligent environments that listen, adapt, and respond."
 ---
 
+# Your Home is Ready to Speak Your Language.
 
-# Your home should be more than walls and wires.
+At Kaleem, we believe a home should be more than a collection of devices. It should be a partner in your daily life—a responsive, intelligent environment that understands your needs, anticipates your desires, and communicates with you effortlessly.
 
-Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
+We are an Iraqi company pioneering the nation's first truly localized smart home ecosystem. From the heart of Basra to the bustling streets of Baghdad, we are redefining what it means to live in a modern, connected space.
 
-At Kaleem, we believe your home should feel like a close friend that understands, cares, and interacts with you.
+## Beyond Automation. A True Dialogue.
 
-[Learn More About Our Solutions](/solutions)
+Forget the rigid commands and generic responses of imported technologies. A Kaleem home speaks your language, understands your culture, and respects your privacy. Our proprietary voice assistant, designed for the nuances of the Iraqi dialect, puts you in seamless control.
 
-## Our Focus
+- **Intuitive Living:** Your home adapts to your routines, from the morning light that greets you to the secure, peaceful quiet of the night.
+- **Uncompromising Privacy:** All voice and data processing happens locally, within the walls of your home. Your life remains your own.
+- **Bespoke Solutions:** Whether for a family residence or a corporate headquarters, we design and implement systems that are as unique as our clients.
 
-Kaleem strategically targets key sectors to bring smart living to a wider audience:
+We build more than smart houses; we create articulate homes. Homes that listen. Homes that understand. Homes that empower.
 
-*   **Residential Complexes:** Deploying large-scale smart home infrastructure across entire housing projects, creating integrated smart communities.
-*   **Businesses:** Providing smart automation, enhanced security, and optimized energy efficiency solutions for diverse commercial environments, including offices, retail spaces, and hospitality venues.
-*   **Private Homes:** Delivering tailored smart home solutions for individual homeowners seeking a smarter, safer, and more user-friendly living space customized to their unique preferences.
+Take a glimpse into [Day in Kaleem Life](/day-in-kaleem-life).
 
-## Intelligent Living with Kaleem AI
-
-*   **Personality & Customization:** Users choose the AI’s name, voice, and character, allowing for a truly personalized interaction.
-*   **Natural Device Control:** Interact with your home or office naturally using intuitive commands like “I’m hot,” or “It’s dark here,” eliminating the need for complex technical jargon.
-*   **Safety & Care:** Our systems are designed to detect emergencies, protect children, support elderly family members, and ensure workplace safety, providing peace of mind.
-*   **Family-like Relationship:** The AI remembers habits, passes messages, and acts like a helpful companion, fostering a sense of connection and support within the home or office environment.
-
-## About Us
-Kaleem is an Iraq-based smart home solutions company with a simple mission: to make every house smart. We retrofit existing homes or build smart systems from scratch, transforming ordinary spaces into intelligent, responsive environments.
-
-At Kaleem, we believe your home should be more than walls and wires — it should feel like a close friend that understands, cares, and interacts with you.
-
-## Mission & Vision
-**Mission:** To deliver seamless smart home solutions that connect people with their living spaces in natural, human ways.
-
-**Vision:** A future where every home in Iraq — and beyond — becomes a smart, helpful companion, powered by AI and supported by locally built technology.
+[Features](/features)(/features)
