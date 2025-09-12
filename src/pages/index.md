@@ -22,4 +22,4 @@ We build more than smart houses; we create articulate homes. Homes that listen. 
 
 Take a glimpse into [Day in Kaleem Life](/day-in-kaleem-life).
 
-[Features](/features)(/features)
+See what [Features](/features) we can offer.
