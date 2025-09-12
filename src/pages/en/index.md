@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownPage.astro
+layout: ../../layouts/MarkdownPage.astro
 title: "Kaleem | The Articulate Home | Smart Home Solutions in Iraq"
 description: "Experience the future with Kaleem, Iraq's premier smart home innovator. We design intelligent environments that listen, adapt, and respond."
 ---
